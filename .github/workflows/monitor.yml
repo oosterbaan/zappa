@@ -34,7 +34,7 @@ jobs:
           VESTEDA_WACHTWOORD: ${{ secrets.VESTEDA_WACHTWOORD }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python vesteda_monitor.py
+        run: python vesteda_monitor.py || true
 
       - name: Save known properties
         if: always()
