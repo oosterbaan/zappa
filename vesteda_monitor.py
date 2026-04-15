@@ -11,8 +11,10 @@ Ondersteunde sites:
 
 import json
 import os
+import random
 import re
 import sys
+import time
 import urllib.request
 import urllib.parse
 import urllib.error
@@ -40,6 +42,18 @@ VESTEDA_WACHTWOORD = os.environ.get("VESTEDA_WACHTWOORD", "")
 # Telegram instellingen
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
+
+# Wisselende user agents
+USER_AGENTS = [
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Safari/605.1.15",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) Gecko/20100101 Firefox/122.0",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+]
+
+def random_ua():
+    return random.choice(USER_AGENTS)
 
 # Bestand om bekende woningen op te slaan
 BEKENDE_WONINGEN_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "bekende_woningen.json")
@@ -74,7 +88,7 @@ def scrape_vesteda():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(
-            user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            user_agent=random_ua(),
             viewport={"width": 1440, "height": 900},
         )
         stealth = Stealth()
@@ -162,7 +176,7 @@ def scrape_govaert():
 
     try:
         req = urllib.request.Request(GOVAERT_URL, headers={
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+            "User-Agent": random_ua()
         })
         response = urllib.request.urlopen(req, timeout=15)
         html = response.read().decode()
@@ -225,7 +239,7 @@ def scrape_domica():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(
-            user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            user_agent=random_ua(),
             viewport={"width": 1440, "height": 900},
         )
         page = context.new_page()
@@ -272,7 +286,7 @@ def scrape_123wonen():
 
     try:
         req = urllib.request.Request(WONEN123_URL, headers={
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+            "User-Agent": random_ua()
         })
         response = urllib.request.urlopen(req, timeout=15)
         html = response.read().decode()
@@ -330,7 +344,7 @@ def scrape_interhouse():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(
-            user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            user_agent=random_ua(),
             viewport={"width": 1440, "height": 900},
         )
         page = context.new_page()
@@ -378,7 +392,7 @@ def scrape_nederwoon():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(
-            user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            user_agent=random_ua(),
             viewport={"width": 1440, "height": 900},
         )
         page = context.new_page()
@@ -430,7 +444,7 @@ def scrape_huurportaal():
 
     try:
         req = urllib.request.Request(HUURPORTAAL_URL, headers={
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+            "User-Agent": random_ua()
         })
         response = urllib.request.urlopen(req, timeout=15)
         html = response.read().decode()
@@ -490,7 +504,7 @@ def scrape_pararius():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(
-            user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            user_agent=random_ua(),
             viewport={"width": 1440, "height": 900},
         )
         page = context.new_page()
@@ -586,45 +600,31 @@ def main():
 
     alle_woningen = []
 
-    # Scrape alle bronnen
-    print("\n  [Vesteda]")
-    alle_woningen += scrape_vesteda()
-    print(f"  {len([w for w in alle_woningen if w['bron'] == 'Vesteda'])} woningen via Vesteda.")
+    # Scrape alle bronnen in willekeurige volgorde (minder voorspelbaar)
+    scrapers = [
+        ("Vesteda", scrape_vesteda),
+        ("Govaert", scrape_govaert),
+        ("Pararius", scrape_pararius),
+        ("Domica", scrape_domica),
+        ("123Wonen", scrape_123wonen),
+        ("Interhouse", scrape_interhouse),
+        ("NederWoon", scrape_nederwoon),
+        ("Huurportaal", scrape_huurportaal),
+    ]
+    random.shuffle(scrapers)
 
-    print("\n  [Govaert]")
-    govaert = scrape_govaert()
-    alle_woningen += govaert
-    print(f"  {len(govaert)} woningen via Govaert.")
-
-    print("\n  [Pararius]")
-    pararius = scrape_pararius()
-    alle_woningen += pararius
-    print(f"  {len(pararius)} woningen via Pararius.")
-
-    print("\n  [Domica]")
-    domica = scrape_domica()
-    alle_woningen += domica
-    print(f"  {len(domica)} woningen via Domica.")
-
-    print("\n  [123Wonen]")
-    wonen123 = scrape_123wonen()
-    alle_woningen += wonen123
-    print(f"  {len(wonen123)} woningen via 123Wonen.")
-
-    print("\n  [Interhouse]")
-    interhouse = scrape_interhouse()
-    alle_woningen += interhouse
-    print(f"  {len(interhouse)} woningen via Interhouse.")
-
-    print("\n  [NederWoon]")
-    nederwoon = scrape_nederwoon()
-    alle_woningen += nederwoon
-    print(f"  {len(nederwoon)} woningen via NederWoon.")
-
-    print("\n  [Huurportaal]")
-    huurportaal = scrape_huurportaal()
-    alle_woningen += huurportaal
-    print(f"  {len(huurportaal)} woningen via Huurportaal.")
+    for naam, scraper in scrapers:
+        print(f"\n  [{naam}]")
+        try:
+            resultaten = scraper()
+            alle_woningen += resultaten
+            print(f"  {len(resultaten)} woningen via {naam}.")
+        except Exception as e:
+            print(f"  FOUT bij {naam}: {e}")
+        # Wacht 5-15 seconden tussen sites
+        pauze = random.randint(5, 15)
+        print(f"  (pauze {pauze}s)")
+        time.sleep(pauze)
 
     print(f"\n  Totaal: {len(alle_woningen)} woningen.")
 
