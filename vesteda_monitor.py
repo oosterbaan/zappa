@@ -25,8 +25,7 @@ from playwright_stealth import Stealth
 from bs4 import BeautifulSoup
 
 # === CONFIGURATIE ===
-VESTEDA_URL = "https://hurenbij.vesteda.com/zoekopdracht/"
-LOGIN_URL = "https://hurenbij.vesteda.com/login/"
+VESTEDA_URL = "https://www.vesteda.com/nl/woning-zoeken?placeType=1&sortType=1&radius=20&s=Amersfoort&sc=woning&latitude=52.156113&longitude=5.3878264&priceFrom=500&priceTo=9999"
 GOVAERT_URL = "https://govaert.nl/woning-huren/actueel-huuraanbod/?_plaatsen=amersfoort"
 PARARIUS_URL = "https://www.pararius.nl/huurwoningen/amersfoort"
 DOMICA_URL = "https://www.domica.nl/woningaanbod?offer=rent&location=Amersfoort"
@@ -34,10 +33,6 @@ WONEN123_URL = "https://www.123wonen.nl/huurwoningen/in/amersfoort"
 INTERHOUSE_URL = "https://interhouse.nl/aanbod/?offer=huur&search_terms=Amersfoort&search_type=city"
 NEDERWOON_URL = "https://nederwoon.nl/search?city=Amersfoort"
 HUURPORTAAL_URL = "https://huurwoningportaal.nl/huurwoningen?view=1&property_search%5Bgroup_ids%5D=2600&property_search%5Bsort%5D=popularity"
-
-# Vesteda inloggegevens
-VESTEDA_EMAIL = os.environ.get("VESTEDA_EMAIL", "")
-VESTEDA_WACHTWOORD = os.environ.get("VESTEDA_WACHTWOORD", "")
 
 # Telegram instellingen
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
@@ -78,11 +73,7 @@ def sla_bekende_woningen_op(woningen):
 # =============================================================================
 
 def scrape_vesteda():
-    """Log in op Vesteda, scrape de zoekpagina en retourneer lijst met woningen."""
-    if not VESTEDA_EMAIL or not VESTEDA_WACHTWOORD:
-        print("  Vesteda overgeslagen (geen inloggegevens).")
-        return []
-
+    """Scrape vesteda.com (geen login nodig, Playwright voor JS-rendering)."""
     woningen = []
 
     with sync_playwright() as p:
@@ -91,77 +82,43 @@ def scrape_vesteda():
             user_agent=random_ua(),
             viewport={"width": 1440, "height": 900},
         )
-        stealth = Stealth()
         page = context.new_page()
-        stealth.apply_stealth_sync(page)
-
-        # Stap 1: Inloggen - cookies accepteren
-        page.goto(LOGIN_URL, wait_until="networkidle", timeout=30000)
-        try:
-            page.click("#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll", timeout=5000)
-            page.wait_for_timeout(1500)
-        except Exception:
-            pass
-
-        # Pagina herladen voor vers CSRF-token
-        page.goto(LOGIN_URL, wait_until="networkidle", timeout=30000)
-        page.wait_for_timeout(1000)
-
-        # Inlogformulier invullen en submitten
-        page.fill("#txtEmail", VESTEDA_EMAIL)
-        page.fill("#txtWachtwoord", VESTEDA_WACHTWOORD)
-        page.evaluate("document.querySelector('#frmLogin').submit()")
-        page.wait_for_load_state("networkidle", timeout=15000)
-        page.wait_for_timeout(2000)
-
-        if "/login" in page.url:
-            print("  FOUT: Vesteda login mislukt.")
-            browser.close()
-            return woningen
-
-        print("  Succesvol ingelogd op Vesteda.")
-
-        # Stap 2: Naar zoekpagina
+        Stealth().apply_stealth_sync(page)
         page.goto(VESTEDA_URL, wait_until="networkidle", timeout=30000)
+        page.wait_for_timeout(3000)
 
-        try:
-            page.wait_for_selector(".card.card-result-list", timeout=15000)
-        except Exception:
-            print("  Geen woningen gevonden op Vesteda.")
-            browser.close()
-            return woningen
-
-        html = page.content()
+        items = page.evaluate("""
+            const seen = new Set();
+            const results = [];
+            document.querySelectorAll('a[href*="vesteda.com/nl/"]').forEach(a => {
+                if (seen.has(a.href) || a.href.includes('woning-zoeken')) return;
+                if (!a.href.includes('amersfoort') && !a.href.includes('huurwoning')) return;
+                seen.add(a.href);
+                const text = a.textContent.replace(/\\s+/g, ' ').trim();
+                const priceMatch = text.match(/(\\d[\\d.]+),-/);
+                const adresMatch = text.match(/^(?:Gereserveerd\\s+)?(.+?)\\s*EUR/i) || text.match(/^(?:Gereserveerd\\s+)?(.+?)\\s*per maand/i);
+                // Get first line as address
+                const lines = text.split(/EUR|per maand|Woonoppervlakte|Amersfoort/);
+                let adres = lines[0].replace('Gereserveerd', '').replace(/^\\s+|\\s+$/g, '');
+                results.push({
+                    adres: adres,
+                    prijs: priceMatch ? priceMatch[1] + ',-' : '',
+                    url: a.href
+                });
+            });
+            results;
+        """)
         browser.close()
 
-    soup = BeautifulSoup(html, "html.parser")
-    cards = soup.select(".card.card-result-list")
-
-    for card in cards:
-        link_el = card.select_one("a.stretched-link, a")
-        href = ""
-        if link_el and link_el.get("href"):
-            href = link_el["href"]
-            if not href.startswith("http"):
-                href = "https://hurenbij.vesteda.com" + href
-
-        title_el = card.select_one("h5.card-title, h2, h3")
-        adres = title_el.get_text(strip=True) if title_el else "Onbekend"
-
-        stad_el = card.select_one(".card-text")
-        stad = stad_el.get_text(strip=True) if stad_el else ""
-
-        prijs_tekst = card.get_text()
-        prijs_match = re.search(r"[\d.]+,-", prijs_tekst)
-        prijs = prijs_match.group() if prijs_match else ""
-
-        woningen.append({
-            "bron": "Vesteda",
-            "adres": adres,
-            "stad": stad,
-            "prijs": prijs,
-            "url": href,
-        })
+    for item in items:
+        if item["adres"]:
+            woningen.append({
+                "bron": "Vesteda",
+                "adres": item["adres"],
+                "stad": "Amersfoort",
+                "prijs": item["prijs"],
+                "url": item["url"],
+            })
 
     return woningen
 
