@@ -2,10 +2,11 @@ name: Huurwoning Monitor
 
 on:
   schedule:
-    # Verschillende tijden om niet als scraper gezien te worden
-    - cron: '7 */2 * * *'    # Om 0:07, 2:07, 4:07, etc (overdag)
-    - cron: '23 1,5,9,13,17,21 * * *'  # Om 1:23, 5:23, 9:23, etc
-    - cron: '41 3,7,11,15,19,23 * * *' # Om 3:41, 7:41, 11:41, etc
+    # ~Elke 30 min maar op onregelmatige tijden
+    - cron: '3,38 0,4,8,12,16,20 * * *'
+    - cron: '11,47 1,5,9,13,17,21 * * *'
+    - cron: '22,53 2,6,10,14,18,22 * * *'
+    - cron: '17,44 3,7,11,15,19,23 * * *'
   workflow_dispatch: {}       # Handmatig starten
 
 jobs:
