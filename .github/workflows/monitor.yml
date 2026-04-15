@@ -2,7 +2,7 @@ name: Vesteda Monitor
 
 on:
   schedule:
-    - cron: '*/15 * * * *'  # Elke 15 minuten
+    - cron: '*/30 * * * *'  # Elke 30 minuten
   workflow_dispatch: {}       # Handmatig starten
 
 jobs:
