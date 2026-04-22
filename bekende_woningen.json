@@ -237,6 +237,104 @@
     "prijs": "€ 1.500 per maand",
     "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/6003b99c/utrechtseweg"
   },
+  "https://www.domica.nl/woning/amersfoort-piet-mondriaanlaan-H106832254": {
+    "bron": "Domica",
+    "adres": "Piet Mondriaanlaan",
+    "stad": "3812GT Amersfoort",
+    "prijs": "€1.700 per maand",
+    "url": "https://www.domica.nl/woning/amersfoort-piet-mondriaanlaan-H106832254"
+  },
+  "https://www.domica.nl/woning/amersfoort-grote-haag-H106832250": {
+    "bron": "Domica",
+    "adres": "Grote Haag",
+    "stad": "3811HH Amersfoort",
+    "prijs": "€3.195 per maand",
+    "url": "https://www.domica.nl/woning/amersfoort-grote-haag-H106832250"
+  },
+  "https://www.domica.nl/woning/amersfoort-graaf-geraldlaan-H106830070": {
+    "bron": "Domica",
+    "adres": "Graaf Geraldlaan",
+    "stad": "3818DK Amersfoort",
+    "prijs": "€1.900 per maand",
+    "url": "https://www.domica.nl/woning/amersfoort-graaf-geraldlaan-H106830070"
+  },
+  "https://www.domica.nl/woning/amersfoort-puntenburgerlaan-H106830038": {
+    "bron": "Domica",
+    "adres": "Puntenburgerlaan",
+    "stad": "3812CA Amersfoort",
+    "prijs": "€1.625 per maand",
+    "url": "https://www.domica.nl/woning/amersfoort-puntenburgerlaan-H106830038"
+  },
+  "https://www.domica.nl/woning/amersfoort-lieve-vrouwestraat-H106831913": {
+    "bron": "Domica",
+    "adres": "Lieve Vrouwestraat",
+    "stad": "3811BR Amersfoort",
+    "prijs": "€1.490 per maand",
+    "url": "https://www.domica.nl/woning/amersfoort-lieve-vrouwestraat-H106831913"
+  },
+  "https://www.domica.nl/woning/amersfoort-leusderweg-H106832253": {
+    "bron": "Domica",
+    "adres": "Leusderweg",
+    "stad": "3817KH Amersfoort",
+    "prijs": "€720 per maand",
+    "url": "https://www.domica.nl/woning/amersfoort-leusderweg-H106832253"
+  },
+  "https://www.domica.nl/woning/amersfoort-bloemendalsestraat-H106832243": {
+    "bron": "Domica",
+    "adres": "Bloemendalsestraat",
+    "stad": "3811ER Amersfoort",
+    "prijs": "€2.195 per maand",
+    "url": "https://www.domica.nl/woning/amersfoort-bloemendalsestraat-H106832243"
+  },
+  "https://www.domica.nl/woning/amersfoort-balladelaan-H106830443": {
+    "bron": "Domica",
+    "adres": "Balladelaan",
+    "stad": "3813CG Amersfoort",
+    "prijs": "€1.895 per maand",
+    "url": "https://www.domica.nl/woning/amersfoort-balladelaan-H106830443"
+  },
+  "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/lofoten-2520-10": {
+    "bron": "123Wonen",
+    "adres": "Lofoten Max",
+    "stad": "Amersfoort",
+    "prijs": "2.295,- p/mnd",
+    "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/lofoten-2520-10"
+  },
+  "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/baak+van+renesse-2518-10": {
+    "bron": "123Wonen",
+    "adres": "Baak van Renesse Max",
+    "stad": "Amersfoort",
+    "prijs": "2.950,- p/mnd",
+    "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/baak+van+renesse-2518-10"
+  },
+  "https://www.123wonen.nl/huur/amersfoort/tussenwoning/pitrus-2497-10": {
+    "bron": "123Wonen",
+    "adres": "Pitrus Max",
+    "stad": "Amersfoort",
+    "prijs": "2.395,- p/mnd",
+    "url": "https://www.123wonen.nl/huur/amersfoort/tussenwoning/pitrus-2497-10"
+  },
+  "https://www.123wonen.nl/huur/amersfoort/tussenwoning/wageningseberg-2508-10": {
+    "bron": "123Wonen",
+    "adres": "Wageningseberg Max",
+    "stad": "Amersfoort",
+    "prijs": "2.100,- p/mnd",
+    "url": "https://www.123wonen.nl/huur/amersfoort/tussenwoning/wageningseberg-2508-10"
+  },
+  "https://www.123wonen.nl/huur/amersfoort/2-onder-1-kap/rigolettostraat-2507-10": {
+    "bron": "123Wonen",
+    "adres": "Rigolettostraat Max",
+    "stad": "Amersfoort",
+    "prijs": "2.200,- p/mnd",
+    "url": "https://www.123wonen.nl/huur/amersfoort/2-onder-1-kap/rigolettostraat-2507-10"
+  },
+  "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/pauwstraat-2498-10": {
+    "bron": "123Wonen",
+    "adres": "Pauwstraat Max",
+    "stad": "Amersfoort",
+    "prijs": "1.750,- p/mnd",
+    "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/pauwstraat-2498-10"
+  },
   "https://govaert.nl/woningen/langestraat-121-a-amersfoort-937085ec2956fbd2fe4de8990ac77d3581a9c0/": {
     "bron": "Govaert",
     "adres": "Langestraat 121",
@@ -405,48 +503,6 @@
     "prijs": "2.500 per maand",
     "url": "https://govaert.nl/woningen/vlasakkerweg-8-b-amersfoort-9370856e1ff76b047a4a9ca4aae33a77590175/"
   },
-  "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/lofoten-2520-10": {
-    "bron": "123Wonen",
-    "adres": "Lofoten Max",
-    "stad": "Amersfoort",
-    "prijs": "2.295,- p/mnd",
-    "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/lofoten-2520-10"
-  },
-  "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/baak+van+renesse-2518-10": {
-    "bron": "123Wonen",
-    "adres": "Baak van Renesse Max",
-    "stad": "Amersfoort",
-    "prijs": "2.950,- p/mnd",
-    "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/baak+van+renesse-2518-10"
-  },
-  "https://www.123wonen.nl/huur/amersfoort/tussenwoning/pitrus-2497-10": {
-    "bron": "123Wonen",
-    "adres": "Pitrus Max",
-    "stad": "Amersfoort",
-    "prijs": "2.395,- p/mnd",
-    "url": "https://www.123wonen.nl/huur/amersfoort/tussenwoning/pitrus-2497-10"
-  },
-  "https://www.123wonen.nl/huur/amersfoort/tussenwoning/wageningseberg-2508-10": {
-    "bron": "123Wonen",
-    "adres": "Wageningseberg Max",
-    "stad": "Amersfoort",
-    "prijs": "2.100,- p/mnd",
-    "url": "https://www.123wonen.nl/huur/amersfoort/tussenwoning/wageningseberg-2508-10"
-  },
-  "https://www.123wonen.nl/huur/amersfoort/2-onder-1-kap/rigolettostraat-2507-10": {
-    "bron": "123Wonen",
-    "adres": "Rigolettostraat Max",
-    "stad": "Amersfoort",
-    "prijs": "2.200,- p/mnd",
-    "url": "https://www.123wonen.nl/huur/amersfoort/2-onder-1-kap/rigolettostraat-2507-10"
-  },
-  "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/pauwstraat-2498-10": {
-    "bron": "123Wonen",
-    "adres": "Pauwstraat Max",
-    "stad": "Amersfoort",
-    "prijs": "1.750,- p/mnd",
-    "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/pauwstraat-2498-10"
-  },
   "https://nederwoon.nl/huurwoning/amersfoort/38041/appartement-groningerstraat": {
     "bron": "NederWoon",
     "adres": "Groningerstraat",
@@ -488,61 +544,5 @@
     "stad": "Amersfoort",
     "prijs": "1.425,00",
     "url": "https://nederwoon.nl/huurwoning/amersfoort/37898/woonhuis-hugo-de-vries-serre"
-  },
-  "https://www.domica.nl/woning/amersfoort-piet-mondriaanlaan-H106832254": {
-    "bron": "Domica",
-    "adres": "Piet Mondriaanlaan",
-    "stad": "3812GT Amersfoort",
-    "prijs": "€1.700 per maand",
-    "url": "https://www.domica.nl/woning/amersfoort-piet-mondriaanlaan-H106832254"
-  },
-  "https://www.domica.nl/woning/amersfoort-grote-haag-H106832250": {
-    "bron": "Domica",
-    "adres": "Grote Haag",
-    "stad": "3811HH Amersfoort",
-    "prijs": "€3.195 per maand",
-    "url": "https://www.domica.nl/woning/amersfoort-grote-haag-H106832250"
-  },
-  "https://www.domica.nl/woning/amersfoort-graaf-geraldlaan-H106830070": {
-    "bron": "Domica",
-    "adres": "Graaf Geraldlaan",
-    "stad": "3818DK Amersfoort",
-    "prijs": "€1.900 per maand",
-    "url": "https://www.domica.nl/woning/amersfoort-graaf-geraldlaan-H106830070"
-  },
-  "https://www.domica.nl/woning/amersfoort-puntenburgerlaan-H106830038": {
-    "bron": "Domica",
-    "adres": "Puntenburgerlaan",
-    "stad": "3812CA Amersfoort",
-    "prijs": "€1.625 per maand",
-    "url": "https://www.domica.nl/woning/amersfoort-puntenburgerlaan-H106830038"
-  },
-  "https://www.domica.nl/woning/amersfoort-lieve-vrouwestraat-H106831913": {
-    "bron": "Domica",
-    "adres": "Lieve Vrouwestraat",
-    "stad": "3811BR Amersfoort",
-    "prijs": "€1.490 per maand",
-    "url": "https://www.domica.nl/woning/amersfoort-lieve-vrouwestraat-H106831913"
-  },
-  "https://www.domica.nl/woning/amersfoort-leusderweg-H106832253": {
-    "bron": "Domica",
-    "adres": "Leusderweg",
-    "stad": "3817KH Amersfoort",
-    "prijs": "€720 per maand",
-    "url": "https://www.domica.nl/woning/amersfoort-leusderweg-H106832253"
-  },
-  "https://www.domica.nl/woning/amersfoort-bloemendalsestraat-H106832243": {
-    "bron": "Domica",
-    "adres": "Bloemendalsestraat",
-    "stad": "3811ER Amersfoort",
-    "prijs": "€2.195 per maand",
-    "url": "https://www.domica.nl/woning/amersfoort-bloemendalsestraat-H106832243"
-  },
-  "https://www.domica.nl/woning/amersfoort-balladelaan-H106830443": {
-    "bron": "Domica",
-    "adres": "Balladelaan",
-    "stad": "3813CG Amersfoort",
-    "prijs": "€1.895 per maand",
-    "url": "https://www.domica.nl/woning/amersfoort-balladelaan-H106830443"
   }
 }
