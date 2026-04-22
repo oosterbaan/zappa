@@ -1,283 +1,17 @@
 {
-  "https://hurenbij.vesteda.com/object/aeaeaeca3b3f39a05af34d699e13c2f8/": {
-    "bron": "Vesteda",
-    "adres": "Blekerssingel 47",
-    "stad": "Amersfoort",
-    "prijs": "1.400,-",
-    "url": "https://hurenbij.vesteda.com/object/aeaeaeca3b3f39a05af34d699e13c2f8/"
+  "https://www.pararius.nl/appartement-te-huur/amersfoort/70e13348/piet-mondriaanlaan": {
+    "bron": "Pararius",
+    "adres": "Appartement Piet Mondriaanlaan",
+    "stad": "3812 GT Amersfoort (Puntenburg)",
+    "prijs": "€ 1.645 per maandTransparantMeer informatie",
+    "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/70e13348/piet-mondriaanlaan"
   },
-  "https://hurenbij.vesteda.com/object/06ae4688154b626834a2f4591a5a2d04/": {
-    "bron": "Vesteda",
-    "adres": "Mignonpad 18",
-    "stad": "Amersfoort",
-    "prijs": "1.770,-",
-    "url": "https://hurenbij.vesteda.com/object/06ae4688154b626834a2f4591a5a2d04/"
-  },
-  "https://hurenbij.vesteda.com/object/47d4a87d8fd025ce70e56c924be1a609/": {
-    "bron": "Vesteda",
-    "adres": "Drapiersgilde 85",
-    "stad": "Amersfoort",
-    "prijs": "2.060,-",
-    "url": "https://hurenbij.vesteda.com/object/47d4a87d8fd025ce70e56c924be1a609/"
-  },
-  "https://hurenbij.vesteda.com/object/d0a744706d18b11742417f8f0e375762/": {
-    "bron": "Vesteda",
-    "adres": "Bombardonstraat 27",
-    "stad": "Amersfoort",
-    "prijs": "1.410,-",
-    "url": "https://hurenbij.vesteda.com/object/d0a744706d18b11742417f8f0e375762/"
-  },
-  "https://hurenbij.vesteda.com/object/9d9b3d7f7cf5dd159b158b5678ee9e34/": {
-    "bron": "Vesteda",
-    "adres": "Bombardonstraat 109",
-    "stad": "Amersfoort",
-    "prijs": "1.450,-",
-    "url": "https://hurenbij.vesteda.com/object/9d9b3d7f7cf5dd159b158b5678ee9e34/"
-  },
-  "https://hurenbij.vesteda.com/object/95e14d928aab5ae072caa184656197e4/": {
-    "bron": "Vesteda",
-    "adres": "Bruggensingel-zuid 159",
-    "stad": "Amersfoort",
-    "prijs": "1.375,-",
-    "url": "https://hurenbij.vesteda.com/object/95e14d928aab5ae072caa184656197e4/"
-  },
-  "https://hurenbij.vesteda.com/object/52842a7ff00284d27a62035c2a8e2ed8/": {
-    "bron": "Vesteda",
-    "adres": "Zeeuwsestraat 75",
-    "stad": "Amersfoort",
-    "prijs": "1.675,-",
-    "url": "https://hurenbij.vesteda.com/object/52842a7ff00284d27a62035c2a8e2ed8/"
-  },
-  "https://hurenbij.vesteda.com/object/52e435e039bd35d967f304b848d697e0/": {
-    "bron": "Vesteda",
-    "adres": "Coulissen 232",
-    "stad": "Amersfoort",
-    "prijs": "1.076,-",
-    "url": "https://hurenbij.vesteda.com/object/52e435e039bd35d967f304b848d697e0/"
-  },
-  "https://hurenbij.vesteda.com/object/7b2a8ec7799bf48ed1f6362893555d27/": {
-    "bron": "Vesteda",
-    "adres": "Grenspolder 87",
-    "stad": "Amersfoort",
-    "prijs": "1.585,-",
-    "url": "https://hurenbij.vesteda.com/object/7b2a8ec7799bf48ed1f6362893555d27/"
-  },
-  "https://hurenbij.vesteda.com/object/b18c3e0cd416fa033ab04c5a0de7a60f/": {
-    "bron": "Vesteda",
-    "adres": "Bruggensingel-zuid 129",
-    "stad": "Amersfoort",
-    "prijs": "1.310,-",
-    "url": "https://hurenbij.vesteda.com/object/b18c3e0cd416fa033ab04c5a0de7a60f/"
-  },
-  "https://hurenbij.vesteda.com/object/0e8d179f9fbaeec5155a23afb6616a2a/": {
-    "bron": "Vesteda",
-    "adres": "Bastion 29",
-    "stad": "Amersfoort",
-    "prijs": "1.420,-",
-    "url": "https://hurenbij.vesteda.com/object/0e8d179f9fbaeec5155a23afb6616a2a/"
-  },
-  "https://hurenbij.vesteda.com/object/a35019be0920789948e394080e349350/": {
-    "bron": "Vesteda",
-    "adres": "Parelvisserspad 5",
-    "stad": "Amersfoort",
-    "prijs": "1.705,-",
-    "url": "https://hurenbij.vesteda.com/object/a35019be0920789948e394080e349350/"
-  },
-  "https://hurenbij.vesteda.com/object/ac1b75d5f58b8c0ac65184a30cfd4370/": {
-    "bron": "Vesteda",
-    "adres": "Zeeuwsestraat 129",
-    "stad": "Amersfoort",
-    "prijs": "1.490,-",
-    "url": "https://hurenbij.vesteda.com/object/ac1b75d5f58b8c0ac65184a30cfd4370/"
-  },
-  "https://hurenbij.vesteda.com/object/dc0e2b030339200d0ac4ad5506364dc8/": {
-    "bron": "Vesteda",
-    "adres": "Uilenhoeve 20",
-    "stad": "Leusden",
-    "prijs": "1.390,-",
-    "url": "https://hurenbij.vesteda.com/object/dc0e2b030339200d0ac4ad5506364dc8/"
-  },
-  "https://hurenbij.vesteda.com/object/1110edfc234e77c51c5ba3b08677afd1/": {
-    "bron": "Vesteda",
-    "adres": "Wijdeveldstraat 8",
-    "stad": "Amersfoort",
-    "prijs": "1.490,-",
-    "url": "https://hurenbij.vesteda.com/object/1110edfc234e77c51c5ba3b08677afd1/"
-  },
-  "https://hurenbij.vesteda.com/object/79f4fb998ae80e701bf5d47fa1008aec/": {
-    "bron": "Vesteda",
-    "adres": "Amsterdamseweg 10G",
-    "stad": "Amersfoort",
-    "prijs": "1.775,-",
-    "url": "https://hurenbij.vesteda.com/object/79f4fb998ae80e701bf5d47fa1008aec/"
-  },
-  "https://govaert.nl/woningen/lange-beekstraat-58-amersfoort-93708596215a57591d41ac8f6e99e4c0432849/": {
-    "bron": "Govaert",
-    "adres": "Lange Beekstraat 58",
-    "stad": "Amersfoort",
-    "prijs": "1.600 per maand",
-    "url": "https://govaert.nl/woningen/lange-beekstraat-58-amersfoort-93708596215a57591d41ac8f6e99e4c0432849/"
-  },
-  "https://govaert.nl/woningen/achter-de-arnhemse-poortwal-115-amersfoort-937085b97c558d440a4be18637d06102d633a7/": {
-    "bron": "Govaert",
-    "adres": "Achter de Arnhemse Poortwal 115",
-    "stad": "Amersfoort",
-    "prijs": "1.350 per maand",
-    "url": "https://govaert.nl/woningen/achter-de-arnhemse-poortwal-115-amersfoort-937085b97c558d440a4be18637d06102d633a7/"
-  },
-  "https://govaert.nl/woningen/meridiaan-106-amersfoort-93708519a0f28a067640f5bbcb880201e3a9ba/": {
-    "bron": "Govaert",
-    "adres": "Meridiaan 106",
-    "stad": "Amersfoort",
-    "prijs": "1.895 per maand",
-    "url": "https://govaert.nl/woningen/meridiaan-106-amersfoort-93708519a0f28a067640f5bbcb880201e3a9ba/"
-  },
-  "https://govaert.nl/woningen/edisonstraat-1-amersfoort-9370854a5baded03754576b9f2de0fa7ad3cea/": {
-    "bron": "Govaert",
-    "adres": "Edisonstraat 1",
-    "stad": "Amersfoort",
-    "prijs": "1.850 per maand",
-    "url": "https://govaert.nl/woningen/edisonstraat-1-amersfoort-9370854a5baded03754576b9f2de0fa7ad3cea/"
-  },
-  "https://govaert.nl/woningen/verdiweg-535-amersfoort-937085adcd45fb6e67498694dcda6a424072b1/": {
-    "bron": "Govaert",
-    "adres": "Verdiweg 535",
-    "stad": "Amersfoort",
-    "prijs": "1.650 per maand",
-    "url": "https://govaert.nl/woningen/verdiweg-535-amersfoort-937085adcd45fb6e67498694dcda6a424072b1/"
-  },
-  "https://govaert.nl/woningen/verdiweg-523-amersfoort-937085c46d378caa314a8cbce122195e28278d/": {
-    "bron": "Govaert",
-    "adres": "Verdiweg 523",
-    "stad": "Amersfoort",
-    "prijs": "1.600 per maand",
-    "url": "https://govaert.nl/woningen/verdiweg-523-amersfoort-937085c46d378caa314a8cbce122195e28278d/"
-  },
-  "https://govaert.nl/woningen/everard-meysterweg-58-c-amersfoort-9370857e63a5b4d654456081c2d241860a0bfe/": {
-    "bron": "Govaert",
-    "adres": "Everard Meysterweg 58",
-    "stad": "Amersfoort",
-    "prijs": "1.695 per maand",
-    "url": "https://govaert.nl/woningen/everard-meysterweg-58-c-amersfoort-9370857e63a5b4d654456081c2d241860a0bfe/"
-  },
-  "https://govaert.nl/woningen/breestraat-52-a-amersfoort-937085f144e94bf22646839d942d35712d462a/": {
-    "bron": "Govaert",
-    "adres": "Breestraat 52",
-    "stad": "Amersfoort",
-    "prijs": "1.995 per maand",
-    "url": "https://govaert.nl/woningen/breestraat-52-a-amersfoort-937085f144e94bf22646839d942d35712d462a/"
-  },
-  "https://govaert.nl/woningen/bornberg-38-amersfoort-937085ff8e7dd4e3154a48a7f533ede97a0077/": {
-    "bron": "Govaert",
-    "adres": "Bornberg 38",
-    "stad": "Amersfoort",
-    "prijs": "1.091 per maand",
-    "url": "https://govaert.nl/woningen/bornberg-38-amersfoort-937085ff8e7dd4e3154a48a7f533ede97a0077/"
-  },
-  "https://govaert.nl/woningen/piet-mondriaanlaan-203-amersfoort-937085ad5890dc53f8400ca8919ca1cb769d8d/": {
-    "bron": "Govaert",
-    "adres": "Piet Mondriaanlaan 203",
-    "stad": "Amersfoort",
-    "prijs": "1.695 per maand",
-    "url": "https://govaert.nl/woningen/piet-mondriaanlaan-203-amersfoort-937085ad5890dc53f8400ca8919ca1cb769d8d/"
-  },
-  "https://govaert.nl/woningen/friesestraat-33-amersfoort-937085c5182941b31e44f393914be6edf4365a/": {
-    "bron": "Govaert",
-    "adres": "Friesestraat 33",
-    "stad": "Amersfoort",
-    "prijs": "1.895 per maand",
-    "url": "https://govaert.nl/woningen/friesestraat-33-amersfoort-937085c5182941b31e44f393914be6edf4365a/"
-  },
-  "https://govaert.nl/woningen/drentsestraat-14-e-amersfoort-937085b46fcb790a65406982d99d2d10c6abb9/": {
-    "bron": "Govaert",
-    "adres": "Drentsestraat 14",
-    "stad": "Amersfoort",
-    "prijs": "1.435 per maand",
-    "url": "https://govaert.nl/woningen/drentsestraat-14-e-amersfoort-937085b46fcb790a65406982d99d2d10c6abb9/"
-  },
-  "https://govaert.nl/woningen/muurhuizen-36-amersfoort-937085a6b3f1e0989b429891d0bf0ef8d94321/": {
-    "bron": "Govaert",
-    "adres": "Muurhuizen 36",
-    "stad": "Amersfoort",
-    "prijs": "2.195 per maand",
-    "url": "https://govaert.nl/woningen/muurhuizen-36-amersfoort-937085a6b3f1e0989b429891d0bf0ef8d94321/"
-  },
-  "https://govaert.nl/woningen/verdiweg-435-amersfoort-937085f21e2c75b644412cbbd1b9f75cffd8eb/": {
-    "bron": "Govaert",
-    "adres": "Verdiweg 435",
-    "stad": "Amersfoort",
-    "prijs": "1.600 per maand",
-    "url": "https://govaert.nl/woningen/verdiweg-435-amersfoort-937085f21e2c75b644412cbbd1b9f75cffd8eb/"
-  },
-  "https://govaert.nl/woningen/griendweg-44-amersfoort-937085bf70b86978904a29b824746cd2ae4d5d/": {
-    "bron": "Govaert",
-    "adres": "Griendweg 44",
-    "stad": "Amersfoort",
-    "prijs": "2.250 per maand",
-    "url": "https://govaert.nl/woningen/griendweg-44-amersfoort-937085bf70b86978904a29b824746cd2ae4d5d/"
-  },
-  "https://govaert.nl/woningen/verdiweg-543-amersfoort-937085e138c65f09f74cd1988f05c3fc020d21/": {
-    "bron": "Govaert",
-    "adres": "Verdiweg 543",
-    "stad": "Amersfoort",
-    "prijs": "1.600 per maand",
-    "url": "https://govaert.nl/woningen/verdiweg-543-amersfoort-937085e138c65f09f74cd1988f05c3fc020d21/"
-  },
-  "https://govaert.nl/woningen/mozartweg-54-c-amersfoort-93708525dda237ca8544c9aa1085fe31237d2e/": {
-    "bron": "Govaert",
-    "adres": "Mozartweg 54",
-    "stad": "Amersfoort",
-    "prijs": "1.675 per maand",
-    "url": "https://govaert.nl/woningen/mozartweg-54-c-amersfoort-93708525dda237ca8544c9aa1085fe31237d2e/"
-  },
-  "https://govaert.nl/woningen/evenaar-25-amersfoort-9370855b8890deccfc4dfb98917d313673bcaf/": {
-    "bron": "Govaert",
-    "adres": "Evenaar 25",
-    "stad": "Amersfoort",
-    "prijs": "1.795 per maand",
-    "url": "https://govaert.nl/woningen/evenaar-25-amersfoort-9370855b8890deccfc4dfb98917d313673bcaf/"
-  },
-  "https://govaert.nl/woningen/zuidsingel-45-a-amersfoort-937085cd545b5c476e401c8e2d53537efe63ca/": {
-    "bron": "Govaert",
-    "adres": "Zuidsingel 45",
-    "stad": "Amersfoort",
-    "prijs": "1.602 per maand",
-    "url": "https://govaert.nl/woningen/zuidsingel-45-a-amersfoort-937085cd545b5c476e401c8e2d53537efe63ca/"
-  },
-  "https://govaert.nl/woningen/achter-de-kamp-15-amersfoort-9370857ffebd9b90f14760ac5d9c3f6bcdc615/": {
-    "bron": "Govaert",
-    "adres": "Achter de Kamp 15",
-    "stad": "Amersfoort",
-    "prijs": "1.685 per maand",
-    "url": "https://govaert.nl/woningen/achter-de-kamp-15-amersfoort-9370857ffebd9b90f14760ac5d9c3f6bcdc615/"
-  },
-  "https://govaert.nl/woningen/vlasakkerweg-8-b-amersfoort-9370856e1ff76b047a4a9ca4aae33a77590175/": {
-    "bron": "Govaert",
-    "adres": "Vlasakkerweg 8",
-    "stad": "Amersfoort",
-    "prijs": "2.500 per maand",
-    "url": "https://govaert.nl/woningen/vlasakkerweg-8-b-amersfoort-9370856e1ff76b047a4a9ca4aae33a77590175/"
-  },
-  "https://govaert.nl/woningen/pothstraat-39-a-amersfoort-9370857fe67920944f4036aedd7ab502a01de9/": {
-    "bron": "Govaert",
-    "adres": "Pothstraat 39",
-    "stad": "Amersfoort",
-    "prijs": "1.400 per maand",
-    "url": "https://govaert.nl/woningen/pothstraat-39-a-amersfoort-9370857fe67920944f4036aedd7ab502a01de9/"
-  },
-  "https://govaert.nl/woningen/pothstraat-39-c-amersfoort-937085ecbeff1c95834bfda477c1f4c04cfca8/": {
-    "bron": "Govaert",
-    "adres": "Pothstraat 39",
-    "stad": "Amersfoort",
-    "prijs": "1.500 per maand",
-    "url": "https://govaert.nl/woningen/pothstraat-39-c-amersfoort-937085ecbeff1c95834bfda477c1f4c04cfca8/"
-  },
-  "https://govaert.nl/woningen/pothstraat-39-b-amersfoort-9370858d7e14359f1f4e77905bd3e965202d52/": {
-    "bron": "Govaert",
-    "adres": "Pothstraat 39",
-    "stad": "Amersfoort",
-    "prijs": "1.600 per maand",
-    "url": "https://govaert.nl/woningen/pothstraat-39-b-amersfoort-9370858d7e14359f1f4e77905bd3e965202d52/"
+  "https://www.pararius.nl/appartement-te-huur/amersfoort/992e3fc2/toetsenbordpad": {
+    "bron": "Pararius",
+    "adres": "Appartement Toetsenbordpad 13",
+    "stad": "3821 BC Amersfoort (Hoefkwartier)",
+    "prijs": "€ 1.950 per maand",
+    "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/992e3fc2/toetsenbordpad"
   },
   "https://www.pararius.nl/appartement-te-huur/amersfoort/d658b93f/hogeweg": {
     "bron": "Pararius",
@@ -300,19 +34,19 @@
     "prijs": "€ 1.400 per maand",
     "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/1ee82e5c/van-spilbergenstraat"
   },
-  "https://www.pararius.nl/appartement-te-huur/amersfoort/4bf0a74e/zwanenhalssteeg": {
+  "https://www.pararius.nl/appartement-te-huur/amersfoort/cf77aa06/zwanenhalssteeg": {
     "bron": "Pararius",
     "adres": "Appartement Zwanenhalssteeg",
     "stad": "3811 BP Amersfoort (Lieve Vrouwekerkhof)",
-    "prijs": "€ 1.600 per maand",
-    "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/4bf0a74e/zwanenhalssteeg"
+    "prijs": "€ 1.775 per maand",
+    "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/cf77aa06/zwanenhalssteeg"
   },
-  "https://www.pararius.nl/huis-te-huur/amersfoort/62c41257/koning-nobelpad": {
+  "https://www.pararius.nl/huis-te-huur/amersfoort/d9ce06e6/hugo-de-vries-serre": {
     "bron": "Pararius",
-    "adres": "Huis Koning Nobelpad",
-    "stad": "3813 KJ Amersfoort (Koperhorst)",
-    "prijs": "€ 1.895 per maand",
-    "url": "https://www.pararius.nl/huis-te-huur/amersfoort/62c41257/koning-nobelpad"
+    "adres": "Huis Hugo de Vries-serre",
+    "stad": "3823 DM Amersfoort (Wintertuinen)",
+    "prijs": "€ 1.425 per maand",
+    "url": "https://www.pararius.nl/huis-te-huur/amersfoort/d9ce06e6/hugo-de-vries-serre"
   },
   "https://www.pararius.nl/huis-te-huur/amersfoort/bd31e038/lofoten": {
     "bron": "Pararius",
@@ -327,13 +61,6 @@
     "stad": "3826 HM Amersfoort (De Baken)",
     "prijs": "€ 2.950 per maand",
     "url": "https://www.pararius.nl/huis-te-huur/amersfoort/62ac46e2/baak-van-renesse"
-  },
-  "https://www.pararius.nl/huis-te-huur/amersfoort/f947f265/straat-van-gibraltar": {
-    "bron": "Pararius",
-    "adres": "Huis Straat van Gibraltar",
-    "stad": "3825 XW Amersfoort (De Bron-Zuid)",
-    "prijs": "€ 1.850 per maand",
-    "url": "https://www.pararius.nl/huis-te-huur/amersfoort/f947f265/straat-van-gibraltar"
   },
   "https://www.pararius.nl/huis-te-huur/amersfoort/b858bf2e/graaf-geraldlaan": {
     "bron": "Pararius",
@@ -369,6 +96,223 @@
     "stad": "3811 NA Amersfoort (Snouckaertlaan e.o.)",
     "prijs": "€ 1.500 per maand",
     "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/6003b99c/utrechtseweg"
+  },
+  "https://nederwoon.nl/huurwoning/amersfoort/38041/appartement-groningerstraat": {
+    "bron": "NederWoon",
+    "adres": "Groningerstraat",
+    "stad": "Amersfoort",
+    "prijs": "1.825,00",
+    "url": "https://nederwoon.nl/huurwoning/amersfoort/38041/appartement-groningerstraat"
+  },
+  "https://nederwoon.nl/huurwoning/amersfoort/38025/appartement-zwanenhalssteeg": {
+    "bron": "NederWoon",
+    "adres": "Zwanenhalssteeg",
+    "stad": "Amersfoort",
+    "prijs": "1.775,00",
+    "url": "https://nederwoon.nl/huurwoning/amersfoort/38025/appartement-zwanenhalssteeg"
+  },
+  "https://nederwoon.nl/huurwoning/amersfoort/38049/appartement-hogeweg": {
+    "bron": "NederWoon",
+    "adres": "Hogeweg",
+    "stad": "Amersfoort",
+    "prijs": "",
+    "url": "https://nederwoon.nl/huurwoning/amersfoort/38049/appartement-hogeweg"
+  },
+  "https://nederwoon.nl/huurwoning/amersfoort/38054/appartement-zwanenhalssteeg": {
+    "bron": "NederWoon",
+    "adres": "Zwanenhalssteeg",
+    "stad": "Amersfoort",
+    "prijs": "1.600,00",
+    "url": "https://nederwoon.nl/huurwoning/amersfoort/38054/appartement-zwanenhalssteeg"
+  },
+  "https://nederwoon.nl/huurwoning/amersfoort/38124/appartement-hogeweg": {
+    "bron": "NederWoon",
+    "adres": "Hogeweg",
+    "stad": "Amersfoort",
+    "prijs": "",
+    "url": "https://nederwoon.nl/huurwoning/amersfoort/38124/appartement-hogeweg"
+  },
+  "https://nederwoon.nl/huurwoning/amersfoort/37898/woonhuis-hugo-de-vries-serre": {
+    "bron": "NederWoon",
+    "adres": "Hugo de Vries-Serre",
+    "stad": "Amersfoort",
+    "prijs": "1.425,00",
+    "url": "https://nederwoon.nl/huurwoning/amersfoort/37898/woonhuis-hugo-de-vries-serre"
+  },
+  "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/lofoten-2520-10": {
+    "bron": "123Wonen",
+    "adres": "Lofoten Max",
+    "stad": "Amersfoort",
+    "prijs": "2.295,- p/mnd",
+    "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/lofoten-2520-10"
+  },
+  "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/baak+van+renesse-2518-10": {
+    "bron": "123Wonen",
+    "adres": "Baak van Renesse Max",
+    "stad": "Amersfoort",
+    "prijs": "2.950,- p/mnd",
+    "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/baak+van+renesse-2518-10"
+  },
+  "https://www.123wonen.nl/huur/amersfoort/tussenwoning/pitrus-2497-10": {
+    "bron": "123Wonen",
+    "adres": "Pitrus Max",
+    "stad": "Amersfoort",
+    "prijs": "2.395,- p/mnd",
+    "url": "https://www.123wonen.nl/huur/amersfoort/tussenwoning/pitrus-2497-10"
+  },
+  "https://www.123wonen.nl/huur/amersfoort/tussenwoning/wageningseberg-2508-10": {
+    "bron": "123Wonen",
+    "adres": "Wageningseberg Max",
+    "stad": "Amersfoort",
+    "prijs": "2.100,- p/mnd",
+    "url": "https://www.123wonen.nl/huur/amersfoort/tussenwoning/wageningseberg-2508-10"
+  },
+  "https://www.123wonen.nl/huur/amersfoort/2-onder-1-kap/rigolettostraat-2507-10": {
+    "bron": "123Wonen",
+    "adres": "Rigolettostraat Max",
+    "stad": "Amersfoort",
+    "prijs": "2.200,- p/mnd",
+    "url": "https://www.123wonen.nl/huur/amersfoort/2-onder-1-kap/rigolettostraat-2507-10"
+  },
+  "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/pauwstraat-2498-10": {
+    "bron": "123Wonen",
+    "adres": "Pauwstraat Max",
+    "stad": "Amersfoort",
+    "prijs": "1.750,- p/mnd",
+    "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/pauwstraat-2498-10"
+  },
+  "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-e56440": {
+    "bron": "Huurportaal",
+    "adres": "4 Kamer Appartement",
+    "stad": "Amersfoort",
+    "prijs": "1.895EUR",
+    "url": "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-e56440"
+  },
+  "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-1dc26f": {
+    "bron": "Huurportaal",
+    "adres": "4 Kamer Appartement",
+    "stad": "Amersfoort",
+    "prijs": "1.850EUR",
+    "url": "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-1dc26f"
+  },
+  "https://huurwoningportaal.nl/huurwoning/4-kamer-huis-rijtjeshuis-in-amersfoort-512d6a": {
+    "bron": "Huurportaal",
+    "adres": "4 Kamer Huis Rijtjeshuis",
+    "stad": "Amersfoort",
+    "prijs": "642EUR",
+    "url": "https://huurwoningportaal.nl/huurwoning/4-kamer-huis-rijtjeshuis-in-amersfoort-512d6a"
+  },
+  "https://huurwoningportaal.nl/huurwoning/4-kamer-huis-rijtjeshuis-in-amersfoort-af6b08": {
+    "bron": "Huurportaal",
+    "adres": "4 Kamer Huis Rijtjeshuis",
+    "stad": "Amersfoort",
+    "prijs": "871EUR",
+    "url": "https://huurwoningportaal.nl/huurwoning/4-kamer-huis-rijtjeshuis-in-amersfoort-af6b08"
+  },
+  "https://huurwoningportaal.nl/huurwoning/1-kamer-appartement-in-amersfoort-5c205e": {
+    "bron": "Huurportaal",
+    "adres": "1 Kamer Appartement",
+    "stad": "Amersfoort",
+    "prijs": "850EUR",
+    "url": "https://huurwoningportaal.nl/huurwoning/1-kamer-appartement-in-amersfoort-5c205e"
+  },
+  "https://huurwoningportaal.nl/huurwoning/4-kamer-huis-rijtjeshuis-in-amersfoort-a16171": {
+    "bron": "Huurportaal",
+    "adres": "4 Kamer Huis Rijtjeshuis",
+    "stad": "Amersfoort",
+    "prijs": "764EUR",
+    "url": "https://huurwoningportaal.nl/huurwoning/4-kamer-huis-rijtjeshuis-in-amersfoort-a16171"
+  },
+  "https://huurwoningportaal.nl/huurwoning/3-kamer-huis-rijtjeshuis-in-amersfoort-2d1f9d": {
+    "bron": "Huurportaal",
+    "adres": "3 Kamer Huis Rijtjeshuis",
+    "stad": "Amersfoort",
+    "prijs": "650EUR",
+    "url": "https://huurwoningportaal.nl/huurwoning/3-kamer-huis-rijtjeshuis-in-amersfoort-2d1f9d"
+  },
+  "https://huurwoningportaal.nl/huurwoning/3-kamer-huis-rijtjeshuis-in-amersfoort-90a379": {
+    "bron": "Huurportaal",
+    "adres": "3 Kamer Huis Rijtjeshuis",
+    "stad": "Amersfoort",
+    "prijs": "870EUR",
+    "url": "https://huurwoningportaal.nl/huurwoning/3-kamer-huis-rijtjeshuis-in-amersfoort-90a379"
+  },
+  "https://huurwoningportaal.nl/huurwoning/4-kamer-huis-rijtjeshuis-in-amersfoort-ad116e": {
+    "bron": "Huurportaal",
+    "adres": "4 Kamer Huis Rijtjeshuis",
+    "stad": "Amersfoort",
+    "prijs": "730EUR",
+    "url": "https://huurwoningportaal.nl/huurwoning/4-kamer-huis-rijtjeshuis-in-amersfoort-ad116e"
+  },
+  "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-95b3d9": {
+    "bron": "Huurportaal",
+    "adres": "3 Kamer Appartement",
+    "stad": "Amersfoort",
+    "prijs": "781EUR",
+    "url": "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-95b3d9"
+  },
+  "https://huurwoningportaal.nl/huurwoning/3-kamer-huis-rijtjeshuis-in-amersfoort-2c4134": {
+    "bron": "Huurportaal",
+    "adres": "3 Kamer Huis Rijtjeshuis",
+    "stad": "Amersfoort",
+    "prijs": "700EUR",
+    "url": "https://huurwoningportaal.nl/huurwoning/3-kamer-huis-rijtjeshuis-in-amersfoort-2c4134"
+  },
+  "https://huurwoningportaal.nl/huurwoning/4-kamer-huis-rijtjeshuis-in-amersfoort-2d9c37": {
+    "bron": "Huurportaal",
+    "adres": "4 Kamer Huis Rijtjeshuis",
+    "stad": "Amersfoort",
+    "prijs": "750EUR",
+    "url": "https://huurwoningportaal.nl/huurwoning/4-kamer-huis-rijtjeshuis-in-amersfoort-2d9c37"
+  },
+  "https://huurwoningportaal.nl/huurwoning/3-kamer-huis-rijtjeshuis-in-amersfoort-416c6f": {
+    "bron": "Huurportaal",
+    "adres": "3 Kamer Huis Rijtjeshuis",
+    "stad": "Amersfoort",
+    "prijs": "750EUR",
+    "url": "https://huurwoningportaal.nl/huurwoning/3-kamer-huis-rijtjeshuis-in-amersfoort-416c6f"
+  },
+  "https://huurwoningportaal.nl/huurwoning/4-kamer-huis-rijtjeshuis-in-amersfoort-cd864c": {
+    "bron": "Huurportaal",
+    "adres": "4 Kamer Huis Rijtjeshuis",
+    "stad": "Amersfoort",
+    "prijs": "1.945EUR",
+    "url": "https://huurwoningportaal.nl/huurwoning/4-kamer-huis-rijtjeshuis-in-amersfoort-cd864c"
+  },
+  "https://huurwoningportaal.nl/huurwoning/4-kamer-huis-rijtjeshuis-in-amersfoort-7b64f9": {
+    "bron": "Huurportaal",
+    "adres": "4 Kamer Huis Rijtjeshuis",
+    "stad": "Amersfoort",
+    "prijs": "2.500EUR",
+    "url": "https://huurwoningportaal.nl/huurwoning/4-kamer-huis-rijtjeshuis-in-amersfoort-7b64f9"
+  },
+  "https://huurwoningportaal.nl/huurwoning/3-kamer-huis-rijtjeshuis-in-amersfoort-1b5112": {
+    "bron": "Huurportaal",
+    "adres": "3 Kamer Huis Rijtjeshuis",
+    "stad": "Amersfoort",
+    "prijs": "780EUR",
+    "url": "https://huurwoningportaal.nl/huurwoning/3-kamer-huis-rijtjeshuis-in-amersfoort-1b5112"
+  },
+  "https://huurwoningportaal.nl/huurwoning/4-kamer-huis-rijtjeshuis-in-amersfoort-ad6612": {
+    "bron": "Huurportaal",
+    "adres": "4 Kamer Huis Rijtjeshuis",
+    "stad": "Amersfoort",
+    "prijs": "750EUR",
+    "url": "https://huurwoningportaal.nl/huurwoning/4-kamer-huis-rijtjeshuis-in-amersfoort-ad6612"
+  },
+  "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-977249": {
+    "bron": "Huurportaal",
+    "adres": "3 Kamer Appartement",
+    "stad": "Amersfoort",
+    "prijs": "700EUR",
+    "url": "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-977249"
+  },
+  "https://www.domica.nl/woning/amersfoort-piet-mondriaanlaan-H106832254": {
+    "bron": "Domica",
+    "adres": "Piet Mondriaanlaan",
+    "stad": "3812GT Amersfoort",
+    "prijs": "€1.700 per maand",
+    "url": "https://www.domica.nl/woning/amersfoort-piet-mondriaanlaan-H106832254"
   },
   "https://www.domica.nl/woning/amersfoort-grote-haag-H106832250": {
     "bron": "Domica",
@@ -419,235 +363,172 @@
     "prijs": "€1.895 per maand",
     "url": "https://www.domica.nl/woning/amersfoort-balladelaan-H106830443"
   },
-  "https://www.domica.nl/woning/amersfoort-'t-zand-H106832252": {
-    "bron": "Domica",
-    "adres": "'t Zand",
-    "stad": "3811GC Amersfoort",
-    "prijs": "€810 per maand",
-    "url": "https://www.domica.nl/woning/amersfoort-'t-zand-H106832252"
-  },
-  "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/lofoten-2520-10": {
-    "bron": "123Wonen",
-    "adres": "Lofoten Max",
+  "https://govaert.nl/woningen/langestraat-121-a-amersfoort-937085ec2956fbd2fe4de8990ac77d3581a9c0/": {
+    "bron": "Govaert",
+    "adres": "Langestraat 121",
     "stad": "Amersfoort",
-    "prijs": "2.295,- p/mnd",
-    "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/lofoten-2520-10"
+    "prijs": "595 per maand",
+    "url": "https://govaert.nl/woningen/langestraat-121-a-amersfoort-937085ec2956fbd2fe4de8990ac77d3581a9c0/"
   },
-  "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/baak+van+renesse-2518-10": {
-    "bron": "123Wonen",
-    "adres": "Baak van Renesse Max",
+  "https://govaert.nl/woningen/achter-de-arnhemse-poortwal-115-amersfoort-937085b97c558d440a4be18637d06102d633a7/": {
+    "bron": "Govaert",
+    "adres": "Achter de Arnhemse Poortwal 115",
     "stad": "Amersfoort",
-    "prijs": "2.950,- p/mnd",
-    "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/baak+van+renesse-2518-10"
+    "prijs": "1.350 per maand",
+    "url": "https://govaert.nl/woningen/achter-de-arnhemse-poortwal-115-amersfoort-937085b97c558d440a4be18637d06102d633a7/"
   },
-  "https://www.123wonen.nl/huur/amersfoort/tussenwoning/pitrus-2497-10": {
-    "bron": "123Wonen",
-    "adres": "Pitrus Max",
+  "https://govaert.nl/woningen/meridiaan-106-amersfoort-93708519a0f28a067640f5bbcb880201e3a9ba/": {
+    "bron": "Govaert",
+    "adres": "Meridiaan 106",
     "stad": "Amersfoort",
-    "prijs": "2.395,- p/mnd",
-    "url": "https://www.123wonen.nl/huur/amersfoort/tussenwoning/pitrus-2497-10"
+    "prijs": "1.895 per maand",
+    "url": "https://govaert.nl/woningen/meridiaan-106-amersfoort-93708519a0f28a067640f5bbcb880201e3a9ba/"
   },
-  "https://www.123wonen.nl/huur/amersfoort/tussenwoning/wageningseberg-2508-10": {
-    "bron": "123Wonen",
-    "adres": "Wageningseberg Max",
+  "https://govaert.nl/woningen/edisonstraat-1-amersfoort-9370854a5baded03754576b9f2de0fa7ad3cea/": {
+    "bron": "Govaert",
+    "adres": "Edisonstraat 1",
     "stad": "Amersfoort",
-    "prijs": "2.100,- p/mnd",
-    "url": "https://www.123wonen.nl/huur/amersfoort/tussenwoning/wageningseberg-2508-10"
+    "prijs": "1.850 per maand",
+    "url": "https://govaert.nl/woningen/edisonstraat-1-amersfoort-9370854a5baded03754576b9f2de0fa7ad3cea/"
   },
-  "https://www.123wonen.nl/huur/amersfoort/2-onder-1-kap/rigolettostraat-2507-10": {
-    "bron": "123Wonen",
-    "adres": "Rigolettostraat Max",
+  "https://govaert.nl/woningen/zuidsingel-45-b-amersfoort-93708527c5fb315645490fa4088eda8d216f28/": {
+    "bron": "Govaert",
+    "adres": "Zuidsingel 45",
     "stad": "Amersfoort",
-    "prijs": "2.200,- p/mnd",
-    "url": "https://www.123wonen.nl/huur/amersfoort/2-onder-1-kap/rigolettostraat-2507-10"
+    "prijs": "1.555 per maand",
+    "url": "https://govaert.nl/woningen/zuidsingel-45-b-amersfoort-93708527c5fb315645490fa4088eda8d216f28/"
   },
-  "https://www.123wonen.nl/huur/amersfoort/2-onder-1-kap/prins+willem-alexanderlaan-2495-10": {
-    "bron": "123Wonen",
-    "adres": "Prins Willem",
+  "https://govaert.nl/woningen/piet-mondriaanlaan-123-b-amersfoort-93708585348a72cd5142ea80b6aa4fdb16392d/": {
+    "bron": "Govaert",
+    "adres": "Piet Mondriaanlaan 123",
     "stad": "Amersfoort",
-    "prijs": "1.800,- p/mnd",
-    "url": "https://www.123wonen.nl/huur/amersfoort/2-onder-1-kap/prins+willem-alexanderlaan-2495-10"
+    "prijs": "1.500 per maand",
+    "url": "https://govaert.nl/woningen/piet-mondriaanlaan-123-b-amersfoort-93708585348a72cd5142ea80b6aa4fdb16392d/"
   },
-  "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/pauwstraat-2498-10": {
-    "bron": "123Wonen",
-    "adres": "Pauwstraat Max",
+  "https://govaert.nl/woningen/lange-beekstraat-58-amersfoort-93708596215a57591d41ac8f6e99e4c0432849/": {
+    "bron": "Govaert",
+    "adres": "Lange Beekstraat 58",
     "stad": "Amersfoort",
-    "prijs": "1.750,- p/mnd",
-    "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/pauwstraat-2498-10"
+    "prijs": "1.600 per maand",
+    "url": "https://govaert.nl/woningen/lange-beekstraat-58-amersfoort-93708596215a57591d41ac8f6e99e4c0432849/"
   },
-  "https://nederwoon.nl/huurwoning/amersfoort/38041/appartement-groningerstraat": {
-    "bron": "NederWoon",
-    "adres": "Groningerstraat",
+  "https://govaert.nl/woningen/bornberg-38-amersfoort-937085ff8e7dd4e3154a48a7f533ede97a0077/": {
+    "bron": "Govaert",
+    "adres": "Bornberg 38",
     "stad": "Amersfoort",
-    "prijs": "1.825,00",
-    "url": "https://nederwoon.nl/huurwoning/amersfoort/38041/appartement-groningerstraat"
+    "prijs": "1.091 per maand",
+    "url": "https://govaert.nl/woningen/bornberg-38-amersfoort-937085ff8e7dd4e3154a48a7f533ede97a0077/"
   },
-  "https://nederwoon.nl/huurwoning/amersfoort/38025/appartement-zwanenhalssteeg": {
-    "bron": "NederWoon",
-    "adres": "Zwanenhalssteeg",
+  "https://govaert.nl/woningen/verdiweg-535-amersfoort-937085adcd45fb6e67498694dcda6a424072b1/": {
+    "bron": "Govaert",
+    "adres": "Verdiweg 535",
     "stad": "Amersfoort",
-    "prijs": "1.775,00",
-    "url": "https://nederwoon.nl/huurwoning/amersfoort/38025/appartement-zwanenhalssteeg"
+    "prijs": "1.650 per maand",
+    "url": "https://govaert.nl/woningen/verdiweg-535-amersfoort-937085adcd45fb6e67498694dcda6a424072b1/"
   },
-  "https://nederwoon.nl/huurwoning/amersfoort/38049/appartement-hogeweg": {
-    "bron": "NederWoon",
-    "adres": "Hogeweg",
+  "https://govaert.nl/woningen/verdiweg-523-amersfoort-937085c46d378caa314a8cbce122195e28278d/": {
+    "bron": "Govaert",
+    "adres": "Verdiweg 523",
     "stad": "Amersfoort",
-    "prijs": "",
-    "url": "https://nederwoon.nl/huurwoning/amersfoort/38049/appartement-hogeweg"
+    "prijs": "1.600 per maand",
+    "url": "https://govaert.nl/woningen/verdiweg-523-amersfoort-937085c46d378caa314a8cbce122195e28278d/"
   },
-  "https://nederwoon.nl/huurwoning/amersfoort/38054/appartement-zwanenhalssteeg": {
-    "bron": "NederWoon",
-    "adres": "Zwanenhalssteeg",
+  "https://govaert.nl/woningen/everard-meysterweg-58-c-amersfoort-9370857e63a5b4d654456081c2d241860a0bfe/": {
+    "bron": "Govaert",
+    "adres": "Everard Meysterweg 58",
     "stad": "Amersfoort",
-    "prijs": "1.600,00",
-    "url": "https://nederwoon.nl/huurwoning/amersfoort/38054/appartement-zwanenhalssteeg"
+    "prijs": "1.695 per maand",
+    "url": "https://govaert.nl/woningen/everard-meysterweg-58-c-amersfoort-9370857e63a5b4d654456081c2d241860a0bfe/"
   },
-  "https://nederwoon.nl/huurwoning/amersfoort/38124/appartement-hogeweg": {
-    "bron": "NederWoon",
-    "adres": "Hogeweg",
+  "https://govaert.nl/woningen/breestraat-52-a-amersfoort-937085f144e94bf22646839d942d35712d462a/": {
+    "bron": "Govaert",
+    "adres": "Breestraat 52",
     "stad": "Amersfoort",
-    "prijs": "",
-    "url": "https://nederwoon.nl/huurwoning/amersfoort/38124/appartement-hogeweg"
+    "prijs": "1.995 per maand",
+    "url": "https://govaert.nl/woningen/breestraat-52-a-amersfoort-937085f144e94bf22646839d942d35712d462a/"
   },
-  "https://nederwoon.nl/huurwoning/amersfoort/37898/woonhuis-hugo-de-vries-serre": {
-    "bron": "NederWoon",
-    "adres": "Hugo de Vries-Serre",
+  "https://govaert.nl/woningen/piet-mondriaanlaan-203-amersfoort-937085ad5890dc53f8400ca8919ca1cb769d8d/": {
+    "bron": "Govaert",
+    "adres": "Piet Mondriaanlaan 203",
     "stad": "Amersfoort",
-    "prijs": "1.425,00",
-    "url": "https://nederwoon.nl/huurwoning/amersfoort/37898/woonhuis-hugo-de-vries-serre"
+    "prijs": "1.695 per maand",
+    "url": "https://govaert.nl/woningen/piet-mondriaanlaan-203-amersfoort-937085ad5890dc53f8400ca8919ca1cb769d8d/"
   },
-  "https://nederwoon.nl/huurwoning/amersfoort/37918/woonhuis-straat-van-gibraltar": {
-    "bron": "NederWoon",
-    "adres": "Straat van Gibraltar",
+  "https://govaert.nl/woningen/friesestraat-33-amersfoort-937085c5182941b31e44f393914be6edf4365a/": {
+    "bron": "Govaert",
+    "adres": "Friesestraat 33",
     "stad": "Amersfoort",
-    "prijs": "1.850,00",
-    "url": "https://nederwoon.nl/huurwoning/amersfoort/37918/woonhuis-straat-van-gibraltar"
+    "prijs": "1.895 per maand",
+    "url": "https://govaert.nl/woningen/friesestraat-33-amersfoort-937085c5182941b31e44f393914be6edf4365a/"
   },
-  "https://huurwoningportaal.nl/huurwoning/2-kamer-appartement-in-amersfoort-fadb24": {
-    "bron": "Huurportaal",
-    "adres": "2 Kamer Appartement",
+  "https://govaert.nl/woningen/muurhuizen-36-amersfoort-937085a6b3f1e0989b429891d0bf0ef8d94321/": {
+    "bron": "Govaert",
+    "adres": "Muurhuizen 36",
     "stad": "Amersfoort",
-    "prijs": "850EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/2-kamer-appartement-in-amersfoort-fadb24"
+    "prijs": "2.195 per maand",
+    "url": "https://govaert.nl/woningen/muurhuizen-36-amersfoort-937085a6b3f1e0989b429891d0bf0ef8d94321/"
   },
-  "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-81fdec": {
-    "bron": "Huurportaal",
-    "adres": "3 Kamer Appartement",
+  "https://govaert.nl/woningen/verdiweg-435-amersfoort-937085f21e2c75b644412cbbd1b9f75cffd8eb/": {
+    "bron": "Govaert",
+    "adres": "Verdiweg 435",
     "stad": "Amersfoort",
-    "prijs": "1.000EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-81fdec"
+    "prijs": "1.600 per maand",
+    "url": "https://govaert.nl/woningen/verdiweg-435-amersfoort-937085f21e2c75b644412cbbd1b9f75cffd8eb/"
   },
-  "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-05a5d8": {
-    "bron": "Huurportaal",
-    "adres": "4 Kamer Appartement",
+  "https://govaert.nl/woningen/griendweg-44-amersfoort-937085bf70b86978904a29b824746cd2ae4d5d/": {
+    "bron": "Govaert",
+    "adres": "Griendweg 44",
     "stad": "Amersfoort",
-    "prijs": "1.350EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-05a5d8"
+    "prijs": "2.250 per maand",
+    "url": "https://govaert.nl/woningen/griendweg-44-amersfoort-937085bf70b86978904a29b824746cd2ae4d5d/"
   },
-  "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-01b236": {
-    "bron": "Huurportaal",
-    "adres": "4 Kamer Appartement",
+  "https://govaert.nl/woningen/verdiweg-543-amersfoort-937085e138c65f09f74cd1988f05c3fc020d21/": {
+    "bron": "Govaert",
+    "adres": "Verdiweg 543",
     "stad": "Amersfoort",
-    "prijs": "1.895EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-01b236"
+    "prijs": "1.600 per maand",
+    "url": "https://govaert.nl/woningen/verdiweg-543-amersfoort-937085e138c65f09f74cd1988f05c3fc020d21/"
   },
-  "https://huurwoningportaal.nl/huurwoning/6-kamer-appartement-in-amersfoort-c5459c": {
-    "bron": "Huurportaal",
-    "adres": "6 Kamer Appartement",
+  "https://govaert.nl/woningen/mozartweg-54-c-amersfoort-93708525dda237ca8544c9aa1085fe31237d2e/": {
+    "bron": "Govaert",
+    "adres": "Mozartweg 54",
     "stad": "Amersfoort",
-    "prijs": "1.850EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/6-kamer-appartement-in-amersfoort-c5459c"
+    "prijs": "1.675 per maand",
+    "url": "https://govaert.nl/woningen/mozartweg-54-c-amersfoort-93708525dda237ca8544c9aa1085fe31237d2e/"
   },
-  "https://huurwoningportaal.nl/huurwoning/2-kamer-appartement-in-amersfoort-572408": {
-    "bron": "Huurportaal",
-    "adres": "2 Kamer Appartement",
+  "https://govaert.nl/woningen/evenaar-25-amersfoort-9370855b8890deccfc4dfb98917d313673bcaf/": {
+    "bron": "Govaert",
+    "adres": "Evenaar 25",
     "stad": "Amersfoort",
-    "prijs": "895EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/2-kamer-appartement-in-amersfoort-572408"
+    "prijs": "1.795 per maand",
+    "url": "https://govaert.nl/woningen/evenaar-25-amersfoort-9370855b8890deccfc4dfb98917d313673bcaf/"
   },
-  "https://huurwoningportaal.nl/huurwoning/11-m2-kamer-in-amersfoort-297b9e": {
-    "bron": "Huurportaal",
-    "adres": "11 M2 Kamer",
+  "https://govaert.nl/woningen/drentsestraat-14-e-amersfoort-937085b46fcb790a65406982d99d2d10c6abb9/": {
+    "bron": "Govaert",
+    "adres": "Drentsestraat 14",
     "stad": "Amersfoort",
-    "prijs": "325EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/11-m2-kamer-in-amersfoort-297b9e"
+    "prijs": "1.435 per maand",
+    "url": "https://govaert.nl/woningen/drentsestraat-14-e-amersfoort-937085b46fcb790a65406982d99d2d10c6abb9/"
   },
-  "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-845917": {
-    "bron": "Huurportaal",
-    "adres": "4 Kamer Appartement",
+  "https://govaert.nl/woningen/zuidsingel-45-a-amersfoort-937085cd545b5c476e401c8e2d53537efe63ca/": {
+    "bron": "Govaert",
+    "adres": "Zuidsingel 45",
     "stad": "Amersfoort",
-    "prijs": "1.150EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-845917"
+    "prijs": "1.602 per maand",
+    "url": "https://govaert.nl/woningen/zuidsingel-45-a-amersfoort-937085cd545b5c476e401c8e2d53537efe63ca/"
   },
-  "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-06219d": {
-    "bron": "Huurportaal",
-    "adres": "4 Kamer Appartement",
+  "https://govaert.nl/woningen/achter-de-kamp-15-amersfoort-9370857ffebd9b90f14760ac5d9c3f6bcdc615/": {
+    "bron": "Govaert",
+    "adres": "Achter de Kamp 15",
     "stad": "Amersfoort",
-    "prijs": "1.900EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-06219d"
+    "prijs": "1.685 per maand",
+    "url": "https://govaert.nl/woningen/achter-de-kamp-15-amersfoort-9370857ffebd9b90f14760ac5d9c3f6bcdc615/"
   },
-  "https://huurwoningportaal.nl/huurwoning/2-kamer-appartement-in-amersfoort-f734c0": {
-    "bron": "Huurportaal",
-    "adres": "2 Kamer Appartement",
+  "https://govaert.nl/woningen/vlasakkerweg-8-b-amersfoort-9370856e1ff76b047a4a9ca4aae33a77590175/": {
+    "bron": "Govaert",
+    "adres": "Vlasakkerweg 8",
     "stad": "Amersfoort",
-    "prijs": "1.076EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/2-kamer-appartement-in-amersfoort-f734c0"
-  },
-  "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-054d2f": {
-    "bron": "Huurportaal",
-    "adres": "3 Kamer Appartement",
-    "stad": "Amersfoort",
-    "prijs": "1.175EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-054d2f"
-  },
-  "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-bfbd19": {
-    "bron": "Huurportaal",
-    "adres": "3 Kamer Appartement",
-    "stad": "Amersfoort",
-    "prijs": "1.600EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-bfbd19"
-  },
-  "https://huurwoningportaal.nl/huurwoning/9-m2-kamer-in-amersfoort-f9307a": {
-    "bron": "Huurportaal",
-    "adres": "9 M2 Kamer",
-    "stad": "Amersfoort",
-    "prijs": "493EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/9-m2-kamer-in-amersfoort-f9307a"
-  },
-  "https://huurwoningportaal.nl/huurwoning/2-kamer-appartement-in-amersfoort-aec259": {
-    "bron": "Huurportaal",
-    "adres": "2 Kamer Appartement",
-    "stad": "Amersfoort",
-    "prijs": "1.600EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/2-kamer-appartement-in-amersfoort-aec259"
-  },
-  "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-0046d8": {
-    "bron": "Huurportaal",
-    "adres": "3 Kamer Appartement",
-    "stad": "Amersfoort",
-    "prijs": "865EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-0046d8"
-  },
-  "https://huurwoningportaal.nl/huurwoning/5-kamer-appartement-in-amersfoort-e386ac": {
-    "bron": "Huurportaal",
-    "adres": "5 Kamer Appartement",
-    "stad": "Amersfoort",
-    "prijs": "900EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/5-kamer-appartement-in-amersfoort-e386ac"
-  },
-  "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-f2324d": {
-    "bron": "Huurportaal",
-    "adres": "4 Kamer Appartement",
-    "stad": "Amersfoort",
-    "prijs": "985EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-f2324d"
-  },
-  "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-63aebf": {
-    "bron": "Huurportaal",
-    "adres": "3 Kamer Appartement",
-    "stad": "Amersfoort",
-    "prijs": "1.550EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-63aebf"
+    "prijs": "2.500 per maand",
+    "url": "https://govaert.nl/woningen/vlasakkerweg-8-b-amersfoort-9370856e1ff76b047a4a9ca4aae33a77590175/"
   }
 }
