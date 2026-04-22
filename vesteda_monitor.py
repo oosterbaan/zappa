@@ -512,31 +512,35 @@ def scrape_pararius():
 # =============================================================================
 
 def stuur_telegram(tekst):
-    """Stuur een bericht via Telegram bot."""
+    """Stuur een bericht via Telegram bot naar alle chat IDs (komma-gescheiden)."""
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
         print("Telegram niet geconfigureerd.")
         print(tekst)
         return False
 
+    chat_ids = [c.strip() for c in TELEGRAM_CHAT_ID.split(",") if c.strip()]
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-    payload = json.dumps({
-        "chat_id": TELEGRAM_CHAT_ID,
-        "text": tekst,
-        "parse_mode": "HTML",
-        "disable_web_page_preview": False,
-    })
+    any_success = False
 
-    try:
-        req = urllib.request.Request(url, data=payload.encode(), headers={"Content-Type": "application/json"})
-        urllib.request.urlopen(req)
-        print("  Telegram bericht verzonden!")
-        return True
-    except urllib.error.HTTPError as e:
-        body = e.read().decode()
-        print(f"  FOUT bij Telegram: {e} - {body}")
-    except Exception as e:
-        print(f"  FOUT bij Telegram: {e}")
-    return False
+    for chat_id in chat_ids:
+        payload = json.dumps({
+            "chat_id": chat_id,
+            "text": tekst,
+            "parse_mode": "HTML",
+            "disable_web_page_preview": False,
+        })
+        try:
+            req = urllib.request.Request(url, data=payload.encode(), headers={"Content-Type": "application/json"})
+            urllib.request.urlopen(req)
+            print(f"  Telegram bericht verzonden naar {chat_id}!")
+            any_success = True
+        except urllib.error.HTTPError as e:
+            body = e.read().decode()
+            print(f"  FOUT bij Telegram ({chat_id}): {e} - {body}")
+        except Exception as e:
+            print(f"  FOUT bij Telegram ({chat_id}): {e}")
+
+    return any_success
 
 
 def meld_nieuwe_woningen(nieuwe_woningen):
