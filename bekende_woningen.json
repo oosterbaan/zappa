@@ -1,88 +1,4 @@
 {
-  "https://nederwoon.nl/huurwoning/amersfoort/38041/appartement-groningerstraat": {
-    "bron": "NederWoon",
-    "adres": "Groningerstraat",
-    "stad": "Amersfoort",
-    "prijs": "1.825,00",
-    "url": "https://nederwoon.nl/huurwoning/amersfoort/38041/appartement-groningerstraat"
-  },
-  "https://nederwoon.nl/huurwoning/amersfoort/38025/appartement-zwanenhalssteeg": {
-    "bron": "NederWoon",
-    "adres": "Zwanenhalssteeg",
-    "stad": "Amersfoort",
-    "prijs": "1.775,00",
-    "url": "https://nederwoon.nl/huurwoning/amersfoort/38025/appartement-zwanenhalssteeg"
-  },
-  "https://nederwoon.nl/huurwoning/amersfoort/38049/appartement-hogeweg": {
-    "bron": "NederWoon",
-    "adres": "Hogeweg",
-    "stad": "Amersfoort",
-    "prijs": "",
-    "url": "https://nederwoon.nl/huurwoning/amersfoort/38049/appartement-hogeweg"
-  },
-  "https://nederwoon.nl/huurwoning/amersfoort/38054/appartement-zwanenhalssteeg": {
-    "bron": "NederWoon",
-    "adres": "Zwanenhalssteeg",
-    "stad": "Amersfoort",
-    "prijs": "1.600,00",
-    "url": "https://nederwoon.nl/huurwoning/amersfoort/38054/appartement-zwanenhalssteeg"
-  },
-  "https://nederwoon.nl/huurwoning/amersfoort/38124/appartement-hogeweg": {
-    "bron": "NederWoon",
-    "adres": "Hogeweg",
-    "stad": "Amersfoort",
-    "prijs": "",
-    "url": "https://nederwoon.nl/huurwoning/amersfoort/38124/appartement-hogeweg"
-  },
-  "https://nederwoon.nl/huurwoning/amersfoort/37898/woonhuis-hugo-de-vries-serre": {
-    "bron": "NederWoon",
-    "adres": "Hugo de Vries-Serre",
-    "stad": "Amersfoort",
-    "prijs": "1.425,00",
-    "url": "https://nederwoon.nl/huurwoning/amersfoort/37898/woonhuis-hugo-de-vries-serre"
-  },
-  "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/lofoten-2520-10": {
-    "bron": "123Wonen",
-    "adres": "Lofoten Max",
-    "stad": "Amersfoort",
-    "prijs": "2.295,- p/mnd",
-    "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/lofoten-2520-10"
-  },
-  "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/baak+van+renesse-2518-10": {
-    "bron": "123Wonen",
-    "adres": "Baak van Renesse Max",
-    "stad": "Amersfoort",
-    "prijs": "2.950,- p/mnd",
-    "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/baak+van+renesse-2518-10"
-  },
-  "https://www.123wonen.nl/huur/amersfoort/tussenwoning/pitrus-2497-10": {
-    "bron": "123Wonen",
-    "adres": "Pitrus Max",
-    "stad": "Amersfoort",
-    "prijs": "2.395,- p/mnd",
-    "url": "https://www.123wonen.nl/huur/amersfoort/tussenwoning/pitrus-2497-10"
-  },
-  "https://www.123wonen.nl/huur/amersfoort/tussenwoning/wageningseberg-2508-10": {
-    "bron": "123Wonen",
-    "adres": "Wageningseberg Max",
-    "stad": "Amersfoort",
-    "prijs": "2.100,- p/mnd",
-    "url": "https://www.123wonen.nl/huur/amersfoort/tussenwoning/wageningseberg-2508-10"
-  },
-  "https://www.123wonen.nl/huur/amersfoort/2-onder-1-kap/rigolettostraat-2507-10": {
-    "bron": "123Wonen",
-    "adres": "Rigolettostraat Max",
-    "stad": "Amersfoort",
-    "prijs": "2.200,- p/mnd",
-    "url": "https://www.123wonen.nl/huur/amersfoort/2-onder-1-kap/rigolettostraat-2507-10"
-  },
-  "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/pauwstraat-2498-10": {
-    "bron": "123Wonen",
-    "adres": "Pauwstraat Max",
-    "stad": "Amersfoort",
-    "prijs": "1.750,- p/mnd",
-    "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/pauwstraat-2498-10"
-  },
   "https://govaert.nl/woningen/langestraat-121-a-amersfoort-937085ec2956fbd2fe4de8990ac77d3581a9c0/": {
     "bron": "Govaert",
     "adres": "Langestraat 121",
@@ -250,6 +166,48 @@
     "stad": "Amersfoort",
     "prijs": "2.500 per maand",
     "url": "https://govaert.nl/woningen/vlasakkerweg-8-b-amersfoort-9370856e1ff76b047a4a9ca4aae33a77590175/"
+  },
+  "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/lofoten-2520-10": {
+    "bron": "123Wonen",
+    "adres": "Lofoten Max",
+    "stad": "Amersfoort",
+    "prijs": "2.295,- p/mnd",
+    "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/lofoten-2520-10"
+  },
+  "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/baak+van+renesse-2518-10": {
+    "bron": "123Wonen",
+    "adres": "Baak van Renesse Max",
+    "stad": "Amersfoort",
+    "prijs": "2.950,- p/mnd",
+    "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/baak+van+renesse-2518-10"
+  },
+  "https://www.123wonen.nl/huur/amersfoort/tussenwoning/pitrus-2497-10": {
+    "bron": "123Wonen",
+    "adres": "Pitrus Max",
+    "stad": "Amersfoort",
+    "prijs": "2.395,- p/mnd",
+    "url": "https://www.123wonen.nl/huur/amersfoort/tussenwoning/pitrus-2497-10"
+  },
+  "https://www.123wonen.nl/huur/amersfoort/tussenwoning/wageningseberg-2508-10": {
+    "bron": "123Wonen",
+    "adres": "Wageningseberg Max",
+    "stad": "Amersfoort",
+    "prijs": "2.100,- p/mnd",
+    "url": "https://www.123wonen.nl/huur/amersfoort/tussenwoning/wageningseberg-2508-10"
+  },
+  "https://www.123wonen.nl/huur/amersfoort/2-onder-1-kap/rigolettostraat-2507-10": {
+    "bron": "123Wonen",
+    "adres": "Rigolettostraat Max",
+    "stad": "Amersfoort",
+    "prijs": "2.200,- p/mnd",
+    "url": "https://www.123wonen.nl/huur/amersfoort/2-onder-1-kap/rigolettostraat-2507-10"
+  },
+  "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/pauwstraat-2498-10": {
+    "bron": "123Wonen",
+    "adres": "Pauwstraat Max",
+    "stad": "Amersfoort",
+    "prijs": "1.750,- p/mnd",
+    "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/pauwstraat-2498-10"
   },
   "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-e56440": {
     "bron": "Huurportaal",
@@ -419,6 +377,13 @@
     "prijs": "€ 1.775 per maand",
     "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/cf77aa06/zwanenhalssteeg"
   },
+  "https://www.pararius.nl/appartement-te-huur/amersfoort/4bf0a74e/zwanenhalssteeg": {
+    "bron": "Pararius",
+    "adres": "Appartement Zwanenhalssteeg",
+    "stad": "3811 BP Amersfoort (Lieve Vrouwekerkhof)",
+    "prijs": "€ 1.600 per maand",
+    "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/4bf0a74e/zwanenhalssteeg"
+  },
   "https://www.pararius.nl/appartement-te-huur/amersfoort/4e73f279/groningerstraat": {
     "bron": "Pararius",
     "adres": "Appartement Groningerstraat",
@@ -481,5 +446,47 @@
     "stad": "3811 NA Amersfoort (Snouckaertlaan e.o.)",
     "prijs": "€ 1.500 per maand",
     "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/6003b99c/utrechtseweg"
+  },
+  "https://nederwoon.nl/huurwoning/amersfoort/38041/appartement-groningerstraat": {
+    "bron": "NederWoon",
+    "adres": "Groningerstraat",
+    "stad": "Amersfoort",
+    "prijs": "1.825,00",
+    "url": "https://nederwoon.nl/huurwoning/amersfoort/38041/appartement-groningerstraat"
+  },
+  "https://nederwoon.nl/huurwoning/amersfoort/38025/appartement-zwanenhalssteeg": {
+    "bron": "NederWoon",
+    "adres": "Zwanenhalssteeg",
+    "stad": "Amersfoort",
+    "prijs": "1.775,00",
+    "url": "https://nederwoon.nl/huurwoning/amersfoort/38025/appartement-zwanenhalssteeg"
+  },
+  "https://nederwoon.nl/huurwoning/amersfoort/38049/appartement-hogeweg": {
+    "bron": "NederWoon",
+    "adres": "Hogeweg",
+    "stad": "Amersfoort",
+    "prijs": "",
+    "url": "https://nederwoon.nl/huurwoning/amersfoort/38049/appartement-hogeweg"
+  },
+  "https://nederwoon.nl/huurwoning/amersfoort/38054/appartement-zwanenhalssteeg": {
+    "bron": "NederWoon",
+    "adres": "Zwanenhalssteeg",
+    "stad": "Amersfoort",
+    "prijs": "1.600,00",
+    "url": "https://nederwoon.nl/huurwoning/amersfoort/38054/appartement-zwanenhalssteeg"
+  },
+  "https://nederwoon.nl/huurwoning/amersfoort/38124/appartement-hogeweg": {
+    "bron": "NederWoon",
+    "adres": "Hogeweg",
+    "stad": "Amersfoort",
+    "prijs": "",
+    "url": "https://nederwoon.nl/huurwoning/amersfoort/38124/appartement-hogeweg"
+  },
+  "https://nederwoon.nl/huurwoning/amersfoort/37898/woonhuis-hugo-de-vries-serre": {
+    "bron": "NederWoon",
+    "adres": "Hugo de Vries-Serre",
+    "stad": "Amersfoort",
+    "prijs": "1.425,00",
+    "url": "https://nederwoon.nl/huurwoning/amersfoort/37898/woonhuis-hugo-de-vries-serre"
   }
 }
