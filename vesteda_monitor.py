@@ -54,6 +54,17 @@ def random_ua():
 BEKENDE_WONINGEN_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "bekende_woningen.json")
 
 
+def normalize_url(url):
+    """Normaliseer URL (verwijder trailing slash, lowercase host, query params)."""
+    if not url:
+        return ""
+    # Strip trailing slash en fragment
+    url = url.rstrip("/").split("#")[0]
+    # Strip query parameters die we niet nodig hebben
+    url = url.split("?")[0]
+    return url
+
+
 def laad_bekende_woningen():
     """Laad eerder geziene woningen uit JSON bestand."""
     if os.path.exists(BEKENDE_WONINGEN_FILE):
@@ -149,9 +160,14 @@ def scrape_govaert():
 
     for link in links:
         href = link.get("href", "")
-        if href in seen_urls or not href:
+        if not href:
             continue
-        seen_urls.add(href)
+        if not href.startswith("http"):
+            href = "https://govaert.nl" + href
+        norm_href = normalize_url(href)
+        if norm_href in seen_urls:
+            continue
+        seen_urls.add(norm_href)
 
         street_el = link.select_one(".object-street")
         number_el = link.select_one(".object-housenumber")
@@ -166,13 +182,15 @@ def scrape_govaert():
 
         stad = city_el.get_text(strip=True) if city_el else "Amersfoort"
 
+        # Filter verhuurd/onder optie (status zit in een badge in de link)
+        tekst_lower = link.get_text().lower()
+        if "verhuurd" in tekst_lower or "onder optie" in tekst_lower:
+            continue
+
         # Prijs
         tekst = link.get_text()
         prijs_match = re.search(r"([\d.]+)\s*(?:\n|\t)*\s*per maand", tekst)
         prijs = prijs_match.group(1) + " per maand" if prijs_match else ""
-
-        if not href.startswith("http"):
-            href = "https://govaert.nl" + href
 
         woningen.append({
             "bron": "Govaert",
@@ -215,20 +233,26 @@ def scrape_domica():
                 adres: (item.querySelector('.eazlee_object_bottom_street_nummer') || {}).textContent?.trim() || '',
                 stad: (item.querySelector('.eazlee_object_bottom_postcode_city') || {}).textContent?.trim() || '',
                 prijs: (item.querySelector('.eazlee_object_bottom_price') || {}).textContent?.trim() || '',
+                status: (item.textContent || '').toLowerCase(),
                 url: item.href || ''
             }))
         """)
         browser.close()
 
     for item in items:
-        if item["adres"]:
-            woningen.append({
-                "bron": "Domica",
-                "adres": item["adres"],
-                "stad": item["stad"],
-                "prijs": item["prijs"],
-                "url": item["url"],
-            })
+        if not item["adres"]:
+            continue
+        # Filter verhuurde woningen
+        status = item.get("status", "")
+        if "verhuurd" in status or "onder optie" in status or "gereserveerd" in status:
+            continue
+        woningen.append({
+            "bron": "Domica",
+            "adres": item["adres"],
+            "stad": item["stad"],
+            "prijs": item["prijs"],
+            "url": item["url"],
+        })
 
     return woningen
 
@@ -253,11 +277,18 @@ def scrape_123wonen():
 
     soup = BeautifulSoup(html, "html.parser")
     links = soup.select('a[href*="/huur/amersfoort/"]')
+    seen = set()
 
     for a in links:
         href = a.get("href", "")
         if not href:
             continue
+        if not href.startswith("http"):
+            href = "https://www.123wonen.nl" + href
+        norm = normalize_url(href)
+        if norm in seen:
+            continue
+        seen.add(norm)
 
         # Ga omhoog naar de kaart
         card = a.parent
@@ -268,6 +299,10 @@ def scrape_123wonen():
 
         text = " ".join(card.get_text().split())
 
+        # Filter verhuurd
+        if "verhuurd" in text.lower() or "onder optie" in text.lower():
+            continue
+
         # Adres
         adres_match = re.search(r"Amersfoort,\s*([A-Za-z\s]+(?:\d[\w\s-]*)?)", text)
         adres = adres_match.group(1).strip() if adres_match else "Onbekend"
@@ -275,9 +310,6 @@ def scrape_123wonen():
         # Prijs
         prijs_match = re.search(r"([\d.]+,-)\s*p/mnd", text)
         prijs = prijs_match.group(1) + " p/mnd" if prijs_match else ""
-
-        if not href.startswith("http"):
-            href = "https://www.123wonen.nl" + href
 
         woningen.append({
             "bron": "123Wonen",
@@ -596,10 +628,19 @@ def main():
     nieuwe_woningen = []
     huidige_dict = {}
 
+    # Migreer oude bekende woningen naar genormaliseerde keys
+    bekende_genormaliseerd = {}
+    for old_key, val in bekende.items():
+        new_key = normalize_url(old_key) if old_key.startswith("http") else old_key
+        bekende_genormaliseerd[new_key] = val
+
     for w in alle_woningen:
-        key = w["url"] or w["adres"]
+        raw_key = w["url"] or w["adres"]
+        key = normalize_url(raw_key) if raw_key.startswith("http") else raw_key
+        if key in huidige_dict:
+            continue  # Skip duplicaten in dezelfde scrape
         huidige_dict[key] = w
-        if key not in bekende:
+        if key not in bekende_genormaliseerd:
             nieuwe_woningen.append(w)
 
     if nieuwe_woningen:

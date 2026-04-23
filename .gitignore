@@ -5,3 +5,4 @@ __pycache__/
 debug_*.py
 debug_*.png
 aanvraag/
+.claude/
