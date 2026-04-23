@@ -54,6 +54,26 @@ def random_ua():
 BEKENDE_WONINGEN_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "bekende_woningen.json")
 
 
+MIN_PRIJS = 1500
+
+
+def parse_prijs(prijs_str):
+    """Extract prijs als integer uit diverse formaten. Retourneert None als onbekend."""
+    if not prijs_str:
+        return None
+    # Verwijder EUR, €, spaties, "per maand", "p/mnd", ",-"
+    cleaned = re.sub(r"[€EUR]|per maand|p/mnd|,-|kale huur", "", prijs_str, flags=re.IGNORECASE).strip()
+    # Match getal (met eventueel punt als duizendtal en ,00 als decimaal)
+    match = re.search(r"(\d[\d.]*)", cleaned)
+    if not match:
+        return None
+    num = match.group(1).replace(".", "")
+    try:
+        return int(num)
+    except ValueError:
+        return None
+
+
 def normalize_url(url):
     """Normaliseer URL (verwijder trailing slash, lowercase host, query params)."""
     if not url:
@@ -634,7 +654,14 @@ def main():
         new_key = normalize_url(old_key) if old_key.startswith("http") else old_key
         bekende_genormaliseerd[new_key] = val
 
+    gefilterd_te_goedkoop = 0
     for w in alle_woningen:
+        # Filter op minimale prijs
+        prijs_num = parse_prijs(w.get("prijs", ""))
+        if prijs_num is not None and prijs_num < MIN_PRIJS:
+            gefilterd_te_goedkoop += 1
+            continue
+
         raw_key = w["url"] or w["adres"]
         key = normalize_url(raw_key) if raw_key.startswith("http") else raw_key
         if key in huidige_dict:
@@ -642,6 +669,9 @@ def main():
         huidige_dict[key] = w
         if key not in bekende_genormaliseerd:
             nieuwe_woningen.append(w)
+
+    if gefilterd_te_goedkoop:
+        print(f"  {gefilterd_te_goedkoop} woning(en) gefilterd (prijs < EUR {MIN_PRIJS}).")
 
     if nieuwe_woningen:
         print(f"  {len(nieuwe_woningen)} NIEUWE woning(en) gevonden!")
