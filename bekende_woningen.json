@@ -1,4 +1,207 @@
 {
+  "https://nederwoon.nl/huurwoning/amersfoort/38041/appartement-groningerstraat": {
+    "bron": "NederWoon",
+    "adres": "Groningerstraat",
+    "stad": "Amersfoort",
+    "prijs": "1.825,00",
+    "url": "https://nederwoon.nl/huurwoning/amersfoort/38041/appartement-groningerstraat"
+  },
+  "https://nederwoon.nl/huurwoning/amersfoort/38025/appartement-zwanenhalssteeg": {
+    "bron": "NederWoon",
+    "adres": "Zwanenhalssteeg",
+    "stad": "Amersfoort",
+    "prijs": "1.775,00",
+    "url": "https://nederwoon.nl/huurwoning/amersfoort/38025/appartement-zwanenhalssteeg"
+  },
+  "https://nederwoon.nl/huurwoning/amersfoort/38049/appartement-hogeweg": {
+    "bron": "NederWoon",
+    "adres": "Hogeweg",
+    "stad": "Amersfoort",
+    "prijs": "",
+    "url": "https://nederwoon.nl/huurwoning/amersfoort/38049/appartement-hogeweg"
+  },
+  "https://nederwoon.nl/huurwoning/amersfoort/38054/appartement-zwanenhalssteeg": {
+    "bron": "NederWoon",
+    "adres": "Zwanenhalssteeg",
+    "stad": "Amersfoort",
+    "prijs": "1.600,00",
+    "url": "https://nederwoon.nl/huurwoning/amersfoort/38054/appartement-zwanenhalssteeg"
+  },
+  "https://nederwoon.nl/huurwoning/amersfoort/38124/appartement-hogeweg": {
+    "bron": "NederWoon",
+    "adres": "Hogeweg",
+    "stad": "Amersfoort",
+    "prijs": "",
+    "url": "https://nederwoon.nl/huurwoning/amersfoort/38124/appartement-hogeweg"
+  },
+  "https://www.domica.nl/woning/amersfoort-piet-mondriaanlaan-H106832254": {
+    "bron": "Domica",
+    "adres": "Piet Mondriaanlaan",
+    "stad": "3812GT Amersfoort",
+    "prijs": "€1.700 per maand",
+    "url": "https://www.domica.nl/woning/amersfoort-piet-mondriaanlaan-H106832254"
+  },
+  "https://www.domica.nl/woning/amersfoort-grote-haag-H106832250": {
+    "bron": "Domica",
+    "adres": "Grote Haag",
+    "stad": "3811HH Amersfoort",
+    "prijs": "€3.195 per maand",
+    "url": "https://www.domica.nl/woning/amersfoort-grote-haag-H106832250"
+  },
+  "https://www.domica.nl/woning/amersfoort-graaf-geraldlaan-H106830070": {
+    "bron": "Domica",
+    "adres": "Graaf Geraldlaan",
+    "stad": "3818DK Amersfoort",
+    "prijs": "€1.900 per maand",
+    "url": "https://www.domica.nl/woning/amersfoort-graaf-geraldlaan-H106830070"
+  },
+  "https://www.domica.nl/woning/amersfoort-puntenburgerlaan-H106830038": {
+    "bron": "Domica",
+    "adres": "Puntenburgerlaan",
+    "stad": "3812CA Amersfoort",
+    "prijs": "€1.625 per maand",
+    "url": "https://www.domica.nl/woning/amersfoort-puntenburgerlaan-H106830038"
+  },
+  "https://www.domica.nl/woning/amersfoort-lieve-vrouwestraat-H106831913": {
+    "bron": "Domica",
+    "adres": "Lieve Vrouwestraat",
+    "stad": "3811BR Amersfoort",
+    "prijs": "€1.490 per maand",
+    "url": "https://www.domica.nl/woning/amersfoort-lieve-vrouwestraat-H106831913"
+  },
+  "https://www.domica.nl/woning/amersfoort-leusderweg-H106832253": {
+    "bron": "Domica",
+    "adres": "Leusderweg",
+    "stad": "3817KH Amersfoort",
+    "prijs": "€720 per maand",
+    "url": "https://www.domica.nl/woning/amersfoort-leusderweg-H106832253"
+  },
+  "https://www.domica.nl/woning/amersfoort-bloemendalsestraat-H106832243": {
+    "bron": "Domica",
+    "adres": "Bloemendalsestraat",
+    "stad": "3811ER Amersfoort",
+    "prijs": "€2.195 per maand",
+    "url": "https://www.domica.nl/woning/amersfoort-bloemendalsestraat-H106832243"
+  },
+  "https://www.domica.nl/woning/amersfoort-balladelaan-H106830443": {
+    "bron": "Domica",
+    "adres": "Balladelaan",
+    "stad": "3813CG Amersfoort",
+    "prijs": "€1.895 per maand",
+    "url": "https://www.domica.nl/woning/amersfoort-balladelaan-H106830443"
+  },
+  "https://www.pararius.nl/appartement-te-huur/amersfoort/70e13348/piet-mondriaanlaan": {
+    "bron": "Pararius",
+    "adres": "Appartement Piet Mondriaanlaan",
+    "stad": "3812 GT Amersfoort (Puntenburg)",
+    "prijs": "€ 1.645 per maandTransparantMeer informatie",
+    "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/70e13348/piet-mondriaanlaan"
+  },
+  "https://www.pararius.nl/appartement-te-huur/amersfoort/992e3fc2/toetsenbordpad": {
+    "bron": "Pararius",
+    "adres": "Appartement Toetsenbordpad 13",
+    "stad": "3821 BC Amersfoort (Hoefkwartier)",
+    "prijs": "€ 1.950 per maand",
+    "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/992e3fc2/toetsenbordpad"
+  },
+  "https://www.pararius.nl/appartement-te-huur/amersfoort/d658b93f/hogeweg": {
+    "bron": "Pararius",
+    "adres": "Appartement Hogeweg",
+    "stad": "3814 CC Amersfoort (Kruiskamp-Zuid)",
+    "prijs": "€ 1.174 per maand",
+    "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/d658b93f/hogeweg"
+  },
+  "https://www.pararius.nl/appartement-te-huur/amersfoort/151b3f3a/hogeweg": {
+    "bron": "Pararius",
+    "adres": "Appartement Hogeweg",
+    "stad": "3814 CC Amersfoort (Kruiskamp-Zuid)",
+    "prijs": "€ 1.174 per maand",
+    "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/151b3f3a/hogeweg"
+  },
+  "https://www.pararius.nl/appartement-te-huur/amersfoort/1ee82e5c/van-spilbergenstraat": {
+    "bron": "Pararius",
+    "adres": "Appartement Van Spilbergenstraat",
+    "stad": "3814 VK Amersfoort (Kruiskamp-Midden)",
+    "prijs": "€ 1.400 per maand",
+    "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/1ee82e5c/van-spilbergenstraat"
+  },
+  "https://www.pararius.nl/appartement-te-huur/amersfoort/cf77aa06/zwanenhalssteeg": {
+    "bron": "Pararius",
+    "adres": "Appartement Zwanenhalssteeg",
+    "stad": "3811 BP Amersfoort (Lieve Vrouwekerkhof)",
+    "prijs": "€ 1.775 per maand",
+    "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/cf77aa06/zwanenhalssteeg"
+  },
+  "https://www.pararius.nl/appartement-te-huur/amersfoort/4bf0a74e/zwanenhalssteeg": {
+    "bron": "Pararius",
+    "adres": "Appartement Zwanenhalssteeg",
+    "stad": "3811 BP Amersfoort (Lieve Vrouwekerkhof)",
+    "prijs": "€ 1.600 per maand",
+    "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/4bf0a74e/zwanenhalssteeg"
+  },
+  "https://www.pararius.nl/appartement-te-huur/amersfoort/4e73f279/groningerstraat": {
+    "bron": "Pararius",
+    "adres": "Appartement Groningerstraat",
+    "stad": "3812 EG Amersfoort (Puntenburg)",
+    "prijs": "€ 1.825 per maand",
+    "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/4e73f279/groningerstraat"
+  },
+  "https://www.pararius.nl/huis-te-huur/amersfoort/d9ce06e6/hugo-de-vries-serre": {
+    "bron": "Pararius",
+    "adres": "Huis Hugo de Vries-serre",
+    "stad": "3823 DM Amersfoort (Wintertuinen)",
+    "prijs": "€ 1.425 per maand",
+    "url": "https://www.pararius.nl/huis-te-huur/amersfoort/d9ce06e6/hugo-de-vries-serre"
+  },
+  "https://www.pararius.nl/huis-te-huur/amersfoort/bd31e038/lofoten": {
+    "bron": "Pararius",
+    "adres": "Huis Lofoten",
+    "stad": "3825 ZD Amersfoort (Eilandengroepenbuurt)",
+    "prijs": "€ 2.295 per maand",
+    "url": "https://www.pararius.nl/huis-te-huur/amersfoort/bd31e038/lofoten"
+  },
+  "https://www.pararius.nl/huis-te-huur/amersfoort/62ac46e2/baak-van-renesse": {
+    "bron": "Pararius",
+    "adres": "Huis Baak van Renesse",
+    "stad": "3826 HM Amersfoort (De Baken)",
+    "prijs": "€ 2.950 per maand",
+    "url": "https://www.pararius.nl/huis-te-huur/amersfoort/62ac46e2/baak-van-renesse"
+  },
+  "https://www.pararius.nl/huis-te-huur/amersfoort/b858bf2e/graaf-geraldlaan": {
+    "bron": "Pararius",
+    "adres": "Huis Graaf Geraldlaan",
+    "stad": "3818 DK Amersfoort (Juliana van Stolberg)",
+    "prijs": "€ 1.850 per maandTransparantMeer informatie",
+    "url": "https://www.pararius.nl/huis-te-huur/amersfoort/b858bf2e/graaf-geraldlaan"
+  },
+  "https://www.pararius.nl/appartement-te-huur/amersfoort/55fe0bb5/grote-haag": {
+    "bron": "Pararius",
+    "adres": "Appartement Grote Haag",
+    "stad": "3811 HH Amersfoort (Grote Haag)",
+    "prijs": "€ 2.845 per maandTransparantMeer informatie",
+    "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/55fe0bb5/grote-haag"
+  },
+  "https://www.pararius.nl/huis-te-huur/amersfoort/143a2a9c/bruggensingel-noord": {
+    "bron": "Pararius",
+    "adres": "Huis Bruggensingel-Noord",
+    "stad": "3823 BC Amersfoort (Paddenstoelenbuurt)",
+    "prijs": "€ 2.049 per maandTransparantMeer informatie",
+    "url": "https://www.pararius.nl/huis-te-huur/amersfoort/143a2a9c/bruggensingel-noord"
+  },
+  "https://www.pararius.nl/huis-te-huur/amersfoort/fd317ff9/de-marke": {
+    "bron": "Pararius",
+    "adres": "Huis De Marke 12",
+    "stad": "3823 GP Amersfoort (Boerderijenkamer)",
+    "prijs": "€ 4.250 per maand",
+    "url": "https://www.pararius.nl/huis-te-huur/amersfoort/fd317ff9/de-marke"
+  },
+  "https://www.pararius.nl/appartement-te-huur/amersfoort/6003b99c/utrechtseweg": {
+    "bron": "Pararius",
+    "adres": "Appartement Utrechtseweg",
+    "stad": "3811 NA Amersfoort (Snouckaertlaan e.o.)",
+    "prijs": "€ 1.500 per maand",
+    "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/6003b99c/utrechtseweg"
+  },
   "https://govaert.nl/woningen/langestraat-121-a-amersfoort-937085ec2956fbd2fe4de8990ac77d3581a9c0/": {
     "bron": "Govaert",
     "adres": "Langestraat 121",
@@ -209,118 +412,6 @@
     "prijs": "1.750,- p/mnd",
     "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/pauwstraat-2498-10"
   },
-  "https://www.pararius.nl/appartement-te-huur/amersfoort/70e13348/piet-mondriaanlaan": {
-    "bron": "Pararius",
-    "adres": "Appartement Piet Mondriaanlaan",
-    "stad": "3812 GT Amersfoort (Puntenburg)",
-    "prijs": "€ 1.645 per maandTransparantMeer informatie",
-    "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/70e13348/piet-mondriaanlaan"
-  },
-  "https://www.pararius.nl/appartement-te-huur/amersfoort/992e3fc2/toetsenbordpad": {
-    "bron": "Pararius",
-    "adres": "Appartement Toetsenbordpad 13",
-    "stad": "3821 BC Amersfoort (Hoefkwartier)",
-    "prijs": "€ 1.950 per maand",
-    "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/992e3fc2/toetsenbordpad"
-  },
-  "https://www.pararius.nl/appartement-te-huur/amersfoort/d658b93f/hogeweg": {
-    "bron": "Pararius",
-    "adres": "Appartement Hogeweg",
-    "stad": "3814 CC Amersfoort (Kruiskamp-Zuid)",
-    "prijs": "€ 1.174 per maand",
-    "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/d658b93f/hogeweg"
-  },
-  "https://www.pararius.nl/appartement-te-huur/amersfoort/151b3f3a/hogeweg": {
-    "bron": "Pararius",
-    "adres": "Appartement Hogeweg",
-    "stad": "3814 CC Amersfoort (Kruiskamp-Zuid)",
-    "prijs": "€ 1.174 per maand",
-    "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/151b3f3a/hogeweg"
-  },
-  "https://www.pararius.nl/appartement-te-huur/amersfoort/1ee82e5c/van-spilbergenstraat": {
-    "bron": "Pararius",
-    "adres": "Appartement Van Spilbergenstraat",
-    "stad": "3814 VK Amersfoort (Kruiskamp-Midden)",
-    "prijs": "€ 1.400 per maand",
-    "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/1ee82e5c/van-spilbergenstraat"
-  },
-  "https://www.pararius.nl/appartement-te-huur/amersfoort/cf77aa06/zwanenhalssteeg": {
-    "bron": "Pararius",
-    "adres": "Appartement Zwanenhalssteeg",
-    "stad": "3811 BP Amersfoort (Lieve Vrouwekerkhof)",
-    "prijs": "€ 1.775 per maand",
-    "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/cf77aa06/zwanenhalssteeg"
-  },
-  "https://www.pararius.nl/appartement-te-huur/amersfoort/4bf0a74e/zwanenhalssteeg": {
-    "bron": "Pararius",
-    "adres": "Appartement Zwanenhalssteeg",
-    "stad": "3811 BP Amersfoort (Lieve Vrouwekerkhof)",
-    "prijs": "€ 1.600 per maand",
-    "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/4bf0a74e/zwanenhalssteeg"
-  },
-  "https://www.pararius.nl/appartement-te-huur/amersfoort/4e73f279/groningerstraat": {
-    "bron": "Pararius",
-    "adres": "Appartement Groningerstraat",
-    "stad": "3812 EG Amersfoort (Puntenburg)",
-    "prijs": "€ 1.825 per maand",
-    "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/4e73f279/groningerstraat"
-  },
-  "https://www.pararius.nl/huis-te-huur/amersfoort/d9ce06e6/hugo-de-vries-serre": {
-    "bron": "Pararius",
-    "adres": "Huis Hugo de Vries-serre",
-    "stad": "3823 DM Amersfoort (Wintertuinen)",
-    "prijs": "€ 1.425 per maand",
-    "url": "https://www.pararius.nl/huis-te-huur/amersfoort/d9ce06e6/hugo-de-vries-serre"
-  },
-  "https://www.pararius.nl/huis-te-huur/amersfoort/bd31e038/lofoten": {
-    "bron": "Pararius",
-    "adres": "Huis Lofoten",
-    "stad": "3825 ZD Amersfoort (Eilandengroepenbuurt)",
-    "prijs": "€ 2.295 per maand",
-    "url": "https://www.pararius.nl/huis-te-huur/amersfoort/bd31e038/lofoten"
-  },
-  "https://www.pararius.nl/huis-te-huur/amersfoort/62ac46e2/baak-van-renesse": {
-    "bron": "Pararius",
-    "adres": "Huis Baak van Renesse",
-    "stad": "3826 HM Amersfoort (De Baken)",
-    "prijs": "€ 2.950 per maand",
-    "url": "https://www.pararius.nl/huis-te-huur/amersfoort/62ac46e2/baak-van-renesse"
-  },
-  "https://www.pararius.nl/huis-te-huur/amersfoort/b858bf2e/graaf-geraldlaan": {
-    "bron": "Pararius",
-    "adres": "Huis Graaf Geraldlaan",
-    "stad": "3818 DK Amersfoort (Juliana van Stolberg)",
-    "prijs": "€ 1.850 per maandTransparantMeer informatie",
-    "url": "https://www.pararius.nl/huis-te-huur/amersfoort/b858bf2e/graaf-geraldlaan"
-  },
-  "https://www.pararius.nl/appartement-te-huur/amersfoort/55fe0bb5/grote-haag": {
-    "bron": "Pararius",
-    "adres": "Appartement Grote Haag",
-    "stad": "3811 HH Amersfoort (Grote Haag)",
-    "prijs": "€ 2.845 per maandTransparantMeer informatie",
-    "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/55fe0bb5/grote-haag"
-  },
-  "https://www.pararius.nl/huis-te-huur/amersfoort/143a2a9c/bruggensingel-noord": {
-    "bron": "Pararius",
-    "adres": "Huis Bruggensingel-Noord",
-    "stad": "3823 BC Amersfoort (Paddenstoelenbuurt)",
-    "prijs": "€ 2.049 per maandTransparantMeer informatie",
-    "url": "https://www.pararius.nl/huis-te-huur/amersfoort/143a2a9c/bruggensingel-noord"
-  },
-  "https://www.pararius.nl/huis-te-huur/amersfoort/fd317ff9/de-marke": {
-    "bron": "Pararius",
-    "adres": "Huis De Marke 12",
-    "stad": "3823 GP Amersfoort (Boerderijenkamer)",
-    "prijs": "€ 4.250 per maand",
-    "url": "https://www.pararius.nl/huis-te-huur/amersfoort/fd317ff9/de-marke"
-  },
-  "https://www.pararius.nl/appartement-te-huur/amersfoort/6003b99c/utrechtseweg": {
-    "bron": "Pararius",
-    "adres": "Appartement Utrechtseweg",
-    "stad": "3811 NA Amersfoort (Snouckaertlaan e.o.)",
-    "prijs": "€ 1.500 per maand",
-    "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/6003b99c/utrechtseweg"
-  },
   "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-e56440": {
     "bron": "Huurportaal",
     "adres": "4 Kamer Appartement",
@@ -446,103 +537,5 @@
     "stad": "Amersfoort",
     "prijs": "700EUR",
     "url": "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-977249"
-  },
-  "https://www.domica.nl/woning/amersfoort-piet-mondriaanlaan-H106832254": {
-    "bron": "Domica",
-    "adres": "Piet Mondriaanlaan",
-    "stad": "3812GT Amersfoort",
-    "prijs": "€1.700 per maand",
-    "url": "https://www.domica.nl/woning/amersfoort-piet-mondriaanlaan-H106832254"
-  },
-  "https://www.domica.nl/woning/amersfoort-grote-haag-H106832250": {
-    "bron": "Domica",
-    "adres": "Grote Haag",
-    "stad": "3811HH Amersfoort",
-    "prijs": "€3.195 per maand",
-    "url": "https://www.domica.nl/woning/amersfoort-grote-haag-H106832250"
-  },
-  "https://www.domica.nl/woning/amersfoort-graaf-geraldlaan-H106830070": {
-    "bron": "Domica",
-    "adres": "Graaf Geraldlaan",
-    "stad": "3818DK Amersfoort",
-    "prijs": "€1.900 per maand",
-    "url": "https://www.domica.nl/woning/amersfoort-graaf-geraldlaan-H106830070"
-  },
-  "https://www.domica.nl/woning/amersfoort-puntenburgerlaan-H106830038": {
-    "bron": "Domica",
-    "adres": "Puntenburgerlaan",
-    "stad": "3812CA Amersfoort",
-    "prijs": "€1.625 per maand",
-    "url": "https://www.domica.nl/woning/amersfoort-puntenburgerlaan-H106830038"
-  },
-  "https://www.domica.nl/woning/amersfoort-lieve-vrouwestraat-H106831913": {
-    "bron": "Domica",
-    "adres": "Lieve Vrouwestraat",
-    "stad": "3811BR Amersfoort",
-    "prijs": "€1.490 per maand",
-    "url": "https://www.domica.nl/woning/amersfoort-lieve-vrouwestraat-H106831913"
-  },
-  "https://www.domica.nl/woning/amersfoort-leusderweg-H106832253": {
-    "bron": "Domica",
-    "adres": "Leusderweg",
-    "stad": "3817KH Amersfoort",
-    "prijs": "€720 per maand",
-    "url": "https://www.domica.nl/woning/amersfoort-leusderweg-H106832253"
-  },
-  "https://www.domica.nl/woning/amersfoort-bloemendalsestraat-H106832243": {
-    "bron": "Domica",
-    "adres": "Bloemendalsestraat",
-    "stad": "3811ER Amersfoort",
-    "prijs": "€2.195 per maand",
-    "url": "https://www.domica.nl/woning/amersfoort-bloemendalsestraat-H106832243"
-  },
-  "https://www.domica.nl/woning/amersfoort-balladelaan-H106830443": {
-    "bron": "Domica",
-    "adres": "Balladelaan",
-    "stad": "3813CG Amersfoort",
-    "prijs": "€1.895 per maand",
-    "url": "https://www.domica.nl/woning/amersfoort-balladelaan-H106830443"
-  },
-  "https://nederwoon.nl/huurwoning/amersfoort/38041/appartement-groningerstraat": {
-    "bron": "NederWoon",
-    "adres": "Groningerstraat",
-    "stad": "Amersfoort",
-    "prijs": "1.825,00",
-    "url": "https://nederwoon.nl/huurwoning/amersfoort/38041/appartement-groningerstraat"
-  },
-  "https://nederwoon.nl/huurwoning/amersfoort/38025/appartement-zwanenhalssteeg": {
-    "bron": "NederWoon",
-    "adres": "Zwanenhalssteeg",
-    "stad": "Amersfoort",
-    "prijs": "1.775,00",
-    "url": "https://nederwoon.nl/huurwoning/amersfoort/38025/appartement-zwanenhalssteeg"
-  },
-  "https://nederwoon.nl/huurwoning/amersfoort/38049/appartement-hogeweg": {
-    "bron": "NederWoon",
-    "adres": "Hogeweg",
-    "stad": "Amersfoort",
-    "prijs": "",
-    "url": "https://nederwoon.nl/huurwoning/amersfoort/38049/appartement-hogeweg"
-  },
-  "https://nederwoon.nl/huurwoning/amersfoort/38054/appartement-zwanenhalssteeg": {
-    "bron": "NederWoon",
-    "adres": "Zwanenhalssteeg",
-    "stad": "Amersfoort",
-    "prijs": "1.600,00",
-    "url": "https://nederwoon.nl/huurwoning/amersfoort/38054/appartement-zwanenhalssteeg"
-  },
-  "https://nederwoon.nl/huurwoning/amersfoort/38124/appartement-hogeweg": {
-    "bron": "NederWoon",
-    "adres": "Hogeweg",
-    "stad": "Amersfoort",
-    "prijs": "",
-    "url": "https://nederwoon.nl/huurwoning/amersfoort/38124/appartement-hogeweg"
-  },
-  "https://nederwoon.nl/huurwoning/amersfoort/37898/woonhuis-hugo-de-vries-serre": {
-    "bron": "NederWoon",
-    "adres": "Hugo de Vries-Serre",
-    "stad": "Amersfoort",
-    "prijs": "1.425,00",
-    "url": "https://nederwoon.nl/huurwoning/amersfoort/37898/woonhuis-hugo-de-vries-serre"
   }
 }
