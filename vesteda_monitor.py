@@ -74,6 +74,21 @@ def parse_prijs(prijs_str):
         return None
 
 
+def normalize_adres(adres):
+    """Normaliseer adres voor vergelijking: lowercase, alleen letters+cijfers."""
+    if not adres:
+        return ""
+    # Lowercase, strip whitespace
+    a = adres.lower().strip()
+    # Verwijder Gereserveerd/Nieuw prefixen
+    a = re.sub(r"^(gereserveerd|nieuw|te huur|verhuurd)\s+", "", a)
+    # Houd alleen letters, cijfers en spaties
+    a = re.sub(r"[^a-z0-9\s]", " ", a)
+    # Normaliseer whitespace
+    a = re.sub(r"\s+", " ", a).strip()
+    return a
+
+
 def normalize_url(url):
     """Normaliseer URL (verwijder trailing slash, lowercase host, query params)."""
     if not url:
@@ -648,13 +663,22 @@ def main():
     nieuwe_woningen = []
     huidige_dict = {}
 
-    # Migreer oude bekende woningen naar genormaliseerde keys
+    # Migreer oude bekende woningen naar genormaliseerde keys + bouw adres-index
     bekende_genormaliseerd = {}
+    bekende_adressen = set()
     for old_key, val in bekende.items():
         new_key = normalize_url(old_key) if old_key.startswith("http") else old_key
         bekende_genormaliseerd[new_key] = val
+        # Bouw adres-lookup
+        if isinstance(val, dict):
+            adres_key = normalize_adres(val.get("adres", ""))
+            if adres_key:
+                bekende_adressen.add(adres_key)
 
     gefilterd_te_goedkoop = 0
+    gefilterd_duplicaat_adres = 0
+    gezien_adressen_deze_run = set()
+
     for w in alle_woningen:
         # Filter op minimale prijs
         prijs_num = parse_prijs(w.get("prijs", ""))
@@ -666,12 +690,27 @@ def main():
         key = normalize_url(raw_key) if raw_key.startswith("http") else raw_key
         if key in huidige_dict:
             continue  # Skip duplicaten in dezelfde scrape
+
+        # Adres-filter: zelfde straat+nummer al bekend? Sla over
+        adres_key = normalize_adres(w.get("adres", ""))
+        if adres_key and adres_key in bekende_adressen:
+            huidige_dict[key] = w  # Wel opslaan zodat verdwijnen correct werkt
+            continue
+        if adres_key and adres_key in gezien_adressen_deze_run:
+            gefilterd_duplicaat_adres += 1
+            huidige_dict[key] = w
+            continue
+
         huidige_dict[key] = w
         if key not in bekende_genormaliseerd:
             nieuwe_woningen.append(w)
+            if adres_key:
+                gezien_adressen_deze_run.add(adres_key)
 
     if gefilterd_te_goedkoop:
         print(f"  {gefilterd_te_goedkoop} woning(en) gefilterd (prijs < EUR {MIN_PRIJS}).")
+    if gefilterd_duplicaat_adres:
+        print(f"  {gefilterd_duplicaat_adres} woning(en) gefilterd (duplicaat adres).")
 
     if nieuwe_woningen:
         print(f"  {len(nieuwe_woningen)} NIEUWE woning(en) gevonden!")
