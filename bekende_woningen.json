@@ -20,40 +20,19 @@
     "prijs": "2.500EUR",
     "url": "https://huurwoningportaal.nl/huurwoning/4-kamer-huis-rijtjeshuis-in-amersfoort-7b64f9"
   },
-  "https://nederwoon.nl/huurwoning/amersfoort/38041/appartement-groningerstraat": {
-    "bron": "NederWoon",
-    "adres": "Groningerstraat",
-    "stad": "Amersfoort",
-    "prijs": "1.825,00",
-    "url": "https://nederwoon.nl/huurwoning/amersfoort/38041/appartement-groningerstraat"
+  "https://www.domica.nl/woning/amersfoort-piet-mondriaanlaan-H106832254": {
+    "bron": "Domica",
+    "adres": "Piet Mondriaanlaan",
+    "stad": "3812GT Amersfoort",
+    "prijs": "€1.700 per maand",
+    "url": "https://www.domica.nl/woning/amersfoort-piet-mondriaanlaan-H106832254"
   },
-  "https://nederwoon.nl/huurwoning/amersfoort/38025/appartement-zwanenhalssteeg": {
-    "bron": "NederWoon",
-    "adres": "Zwanenhalssteeg",
-    "stad": "Amersfoort",
-    "prijs": "1.775,00",
-    "url": "https://nederwoon.nl/huurwoning/amersfoort/38025/appartement-zwanenhalssteeg"
-  },
-  "https://nederwoon.nl/huurwoning/amersfoort/38049/appartement-hogeweg": {
-    "bron": "NederWoon",
-    "adres": "Hogeweg",
-    "stad": "Amersfoort",
-    "prijs": "",
-    "url": "https://nederwoon.nl/huurwoning/amersfoort/38049/appartement-hogeweg"
-  },
-  "https://nederwoon.nl/huurwoning/amersfoort/38054/appartement-zwanenhalssteeg": {
-    "bron": "NederWoon",
-    "adres": "Zwanenhalssteeg",
-    "stad": "Amersfoort",
-    "prijs": "1.600,00",
-    "url": "https://nederwoon.nl/huurwoning/amersfoort/38054/appartement-zwanenhalssteeg"
-  },
-  "https://nederwoon.nl/huurwoning/amersfoort/38124/appartement-hogeweg": {
-    "bron": "NederWoon",
-    "adres": "Hogeweg",
-    "stad": "Amersfoort",
-    "prijs": "",
-    "url": "https://nederwoon.nl/huurwoning/amersfoort/38124/appartement-hogeweg"
+  "https://www.domica.nl/woning/amersfoort-grote-haag-H106832250": {
+    "bron": "Domica",
+    "adres": "Grote Haag",
+    "stad": "3811HH Amersfoort",
+    "prijs": "€3.195 per maand",
+    "url": "https://www.domica.nl/woning/amersfoort-grote-haag-H106832250"
   },
   "https://www.pararius.nl/appartement-te-huur/amersfoort/70e13348/piet-mondriaanlaan": {
     "bron": "Pararius",
@@ -75,13 +54,6 @@
     "stad": "3811 BP Amersfoort (Lieve Vrouwekerkhof)",
     "prijs": "€ 1.775 per maand",
     "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/cf77aa06/zwanenhalssteeg"
-  },
-  "https://www.pararius.nl/appartement-te-huur/amersfoort/4bf0a74e/zwanenhalssteeg": {
-    "bron": "Pararius",
-    "adres": "Appartement Zwanenhalssteeg",
-    "stad": "3811 BP Amersfoort (Lieve Vrouwekerkhof)",
-    "prijs": "€ 1.600 per maand",
-    "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/4bf0a74e/zwanenhalssteeg"
   },
   "https://www.pararius.nl/appartement-te-huur/amersfoort/4e73f279/groningerstraat": {
     "bron": "Pararius",
@@ -138,6 +110,41 @@
     "stad": "3811 NA Amersfoort (Snouckaertlaan e.o.)",
     "prijs": "€ 1.500 per maand",
     "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/6003b99c/utrechtseweg"
+  },
+  "https://nederwoon.nl/huurwoning/amersfoort/38041/appartement-groningerstraat": {
+    "bron": "NederWoon",
+    "adres": "Groningerstraat",
+    "stad": "Amersfoort",
+    "prijs": "1.825,00",
+    "url": "https://nederwoon.nl/huurwoning/amersfoort/38041/appartement-groningerstraat"
+  },
+  "https://nederwoon.nl/huurwoning/amersfoort/38025/appartement-zwanenhalssteeg": {
+    "bron": "NederWoon",
+    "adres": "Zwanenhalssteeg",
+    "stad": "Amersfoort",
+    "prijs": "1.775,00",
+    "url": "https://nederwoon.nl/huurwoning/amersfoort/38025/appartement-zwanenhalssteeg"
+  },
+  "https://nederwoon.nl/huurwoning/amersfoort/38049/appartement-hogeweg": {
+    "bron": "NederWoon",
+    "adres": "Hogeweg",
+    "stad": "Amersfoort",
+    "prijs": "",
+    "url": "https://nederwoon.nl/huurwoning/amersfoort/38049/appartement-hogeweg"
+  },
+  "https://nederwoon.nl/huurwoning/amersfoort/38054/appartement-zwanenhalssteeg": {
+    "bron": "NederWoon",
+    "adres": "Zwanenhalssteeg",
+    "stad": "Amersfoort",
+    "prijs": "1.600,00",
+    "url": "https://nederwoon.nl/huurwoning/amersfoort/38054/appartement-zwanenhalssteeg"
+  },
+  "https://nederwoon.nl/huurwoning/amersfoort/38124/appartement-hogeweg": {
+    "bron": "NederWoon",
+    "adres": "Hogeweg",
+    "stad": "Amersfoort",
+    "prijs": "",
+    "url": "https://nederwoon.nl/huurwoning/amersfoort/38124/appartement-hogeweg"
   },
   "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/lofoten-2520-10": {
     "bron": "123Wonen",
