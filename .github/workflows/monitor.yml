@@ -14,6 +14,10 @@ on:
         type: boolean
         default: false
 
+concurrency:
+  group: monitor
+  cancel-in-progress: false
+
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -50,5 +54,20 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add bekende_woningen.json || true
-          git diff --staged --quiet || git commit -m "Update bekende woningen"
-          git push || true
+          if git diff --staged --quiet; then
+            echo "Geen wijzigingen om op te slaan."
+            exit 0
+          fi
+          git commit -m "Update bekende woningen"
+          # Retry push met rebase bij conflicten
+          for i in 1 2 3 4 5; do
+            if git push; then
+              echo "Push gelukt op poging $i"
+              exit 0
+            fi
+            echo "Push mislukt op poging $i, rebase + retry..."
+            git pull --rebase origin main
+            sleep $((RANDOM % 5 + 2))
+          done
+          echo "FOUT: push mislukt na 5 pogingen!"
+          exit 1
