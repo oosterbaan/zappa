@@ -1,4 +1,18 @@
 {
+  "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/lofoten-2520-10": {
+    "bron": "123Wonen",
+    "adres": "Lofoten Max",
+    "stad": "Amersfoort",
+    "prijs": "2.295,- p/mnd",
+    "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/lofoten-2520-10"
+  },
+  "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/baak+van+renesse-2518-10": {
+    "bron": "123Wonen",
+    "adres": "Baak van Renesse Max",
+    "stad": "Amersfoort",
+    "prijs": "2.950,- p/mnd",
+    "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/baak+van+renesse-2518-10"
+  },
   "https://nederwoon.nl/huurwoning/amersfoort/38041/appartement-groningerstraat": {
     "bron": "NederWoon",
     "adres": "Groningerstraat",
@@ -111,34 +125,6 @@
     "prijs": "€ 1.500 per maand",
     "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/6003b99c/utrechtseweg"
   },
-  "https://www.domica.nl/woning/amersfoort-piet-mondriaanlaan-H106832254": {
-    "bron": "Domica",
-    "adres": "Piet Mondriaanlaan",
-    "stad": "3812GT Amersfoort",
-    "prijs": "€1.700 per maand",
-    "url": "https://www.domica.nl/woning/amersfoort-piet-mondriaanlaan-H106832254"
-  },
-  "https://www.domica.nl/woning/amersfoort-grote-haag-H106832250": {
-    "bron": "Domica",
-    "adres": "Grote Haag",
-    "stad": "3811HH Amersfoort",
-    "prijs": "€3.195 per maand",
-    "url": "https://www.domica.nl/woning/amersfoort-grote-haag-H106832250"
-  },
-  "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/lofoten-2520-10": {
-    "bron": "123Wonen",
-    "adres": "Lofoten Max",
-    "stad": "Amersfoort",
-    "prijs": "2.295,- p/mnd",
-    "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/lofoten-2520-10"
-  },
-  "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/baak+van+renesse-2518-10": {
-    "bron": "123Wonen",
-    "adres": "Baak van Renesse Max",
-    "stad": "Amersfoort",
-    "prijs": "2.950,- p/mnd",
-    "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/baak+van+renesse-2518-10"
-  },
   "https://huurwoningportaal.nl/huurwoning/2-kamer-appartement-in-amersfoort-a9c225": {
     "bron": "Huurportaal",
     "adres": "2 Kamer Appartement",
@@ -153,19 +139,12 @@
     "prijs": "1.500EUR",
     "url": "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-db24d7"
   },
-  "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-e58ccf": {
-    "bron": "Huurportaal",
-    "adres": "4 Kamer Appartement",
-    "stad": "Amersfoort",
-    "prijs": "1.895EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-e58ccf"
-  },
-  "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-a64cfc": {
+  "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-cd8d7c": {
     "bron": "Huurportaal",
     "adres": "3 Kamer Appartement",
     "stad": "Amersfoort",
     "prijs": "1.550EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-a64cfc"
+    "url": "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-cd8d7c"
   },
   "https://huurwoningportaal.nl/huurwoning/4-kamer-huis-rijtjeshuis-in-amersfoort-a0468c": {
     "bron": "Huurportaal",
