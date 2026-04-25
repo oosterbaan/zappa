@@ -54,8 +54,11 @@ def random_ua():
 BEKENDE_WONINGEN_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "bekende_woningen.json")
 
 
-MIN_PRIJS = 1500
-VERGEET_NA_DAGEN = 14  # Woningen pas vergeten na zoveel dagen niet meer gezien
+# === FILTER INSTELLINGEN ===
+MIN_PRIJS = 1500           # Minimaal in euro (None = geen minimum)
+MAX_PRIJS = 2500           # Maximaal in euro (None = geen maximum)
+MIN_OPPERVLAKTE = 60       # Minimaal m² (alleen filteren als oppervlakte bekend is)
+VERGEET_NA_DAGEN = 180     # Woningen 6 maanden onthouden
 
 
 def parse_prijs(prijs_str):
@@ -73,6 +76,45 @@ def parse_prijs(prijs_str):
         return int(num)
     except ValueError:
         return None
+
+
+POSTCODE_RE = re.compile(r"\b(\d{4}\s*[A-Z]{2})\b")
+
+
+def extract_postcode(*texts):
+    """Vind een Nederlandse postcode in een of meer tekstvelden."""
+    for t in texts:
+        if not t:
+            continue
+        m = POSTCODE_RE.search(t.upper())
+        if m:
+            return m.group(1).replace(" ", "")
+    return ""
+
+
+def parse_oppervlakte(*texts):
+    """Vind oppervlakte in m² in tekstvelden. Retourneert None als onbekend."""
+    for t in texts:
+        if not t:
+            continue
+        m = re.search(r"(\d{2,4})\s*m(?:²|2|\\u00b2)?", t)
+        if m:
+            try:
+                return int(m.group(1))
+            except ValueError:
+                pass
+    return None
+
+
+def is_verhuurd(*texts):
+    """Check of een woning verhuurd/onder optie/gereserveerd is."""
+    for t in texts:
+        if not t:
+            continue
+        low = t.lower()
+        if "verhuurd" in low or "onder optie" in low or "gereserveerd" in low:
+            return True
+    return False
 
 
 def normalize_adres(adres):
@@ -673,37 +715,69 @@ def main():
     huidige_dict = {}
 
     # Migreer oude bekende woningen naar genormaliseerde keys + bouw adres-index
+    def make_adres_key(woning):
+        """Bouw een unique key uit adres + postcode (of adres alleen)."""
+        adres = normalize_adres(woning.get("adres", ""))
+        postcode = extract_postcode(
+            woning.get("stad", ""),
+            woning.get("adres", ""),
+        )
+        if adres and postcode:
+            return f"{adres}|{postcode}"
+        return adres
+
     bekende_genormaliseerd = {}
     bekende_adressen = set()
     for old_key, val in bekende.items():
         new_key = normalize_url(old_key) if old_key.startswith("http") else old_key
         bekende_genormaliseerd[new_key] = val
-        # Bouw adres-lookup
         if isinstance(val, dict):
-            adres_key = normalize_adres(val.get("adres", ""))
-            if adres_key:
-                bekende_adressen.add(adres_key)
+            ak = make_adres_key(val)
+            if ak:
+                bekende_adressen.add(ak)
 
     gefilterd_te_goedkoop = 0
+    gefilterd_te_duur = 0
+    gefilterd_te_klein = 0
+    gefilterd_verhuurd = 0
     gefilterd_duplicaat_adres = 0
     gezien_adressen_deze_run = set()
 
     for w in alle_woningen:
-        # Filter op minimale prijs
-        prijs_num = parse_prijs(w.get("prijs", ""))
-        if prijs_num is not None and prijs_num < MIN_PRIJS:
-            gefilterd_te_goedkoop += 1
+        prijs_str = w.get("prijs", "")
+        adres = w.get("adres", "")
+        stad = w.get("stad", "")
+
+        # Filter verhuurd op alle sites (extra check)
+        if is_verhuurd(prijs_str, adres, stad):
+            gefilterd_verhuurd += 1
             continue
 
-        raw_key = w["url"] or w["adres"]
+        # Prijs-filters
+        prijs_num = parse_prijs(prijs_str)
+        if prijs_num is not None:
+            if MIN_PRIJS is not None and prijs_num < MIN_PRIJS:
+                gefilterd_te_goedkoop += 1
+                continue
+            if MAX_PRIJS is not None and prijs_num > MAX_PRIJS:
+                gefilterd_te_duur += 1
+                continue
+
+        # Oppervlakte-filter (alleen als bekend)
+        opp = parse_oppervlakte(prijs_str, adres, stad)
+        if opp is not None and MIN_OPPERVLAKTE is not None and opp < MIN_OPPERVLAKTE:
+            gefilterd_te_klein += 1
+            continue
+
+        raw_key = w["url"] or adres
         key = normalize_url(raw_key) if raw_key.startswith("http") else raw_key
         if key in huidige_dict:
-            continue  # Skip duplicaten in dezelfde scrape
+            continue
 
-        # Adres-filter: zelfde straat+nummer al bekend? Sla over
-        adres_key = normalize_adres(w.get("adres", ""))
+        # Adres-filter (met postcode indien beschikbaar)
+        adres_key = make_adres_key(w)
         if adres_key and adres_key in bekende_adressen:
-            huidige_dict[key] = w  # Wel opslaan zodat verdwijnen correct werkt
+            huidige_dict[key] = w
             continue
         if adres_key and adres_key in gezien_adressen_deze_run:
             gefilterd_duplicaat_adres += 1
@@ -718,6 +792,12 @@ def main():
 
     if gefilterd_te_goedkoop:
         print(f"  {gefilterd_te_goedkoop} woning(en) gefilterd (prijs < EUR {MIN_PRIJS}).")
+    if gefilterd_te_duur:
+        print(f"  {gefilterd_te_duur} woning(en) gefilterd (prijs > EUR {MAX_PRIJS}).")
+    if gefilterd_te_klein:
+        print(f"  {gefilterd_te_klein} woning(en) gefilterd (oppervlakte < {MIN_OPPERVLAKTE} m²).")
+    if gefilterd_verhuurd:
+        print(f"  {gefilterd_verhuurd} woning(en) gefilterd (verhuurd/onder optie).")
     if gefilterd_duplicaat_adres:
         print(f"  {gefilterd_duplicaat_adres} woning(en) gefilterd (duplicaat adres).")
 
