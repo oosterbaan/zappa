@@ -221,24 +221,50 @@ def scrape_vesteda(url=None):
         )
         page = context.new_page()
         Stealth().apply_stealth_sync(page)
-        page.goto(url, wait_until="networkidle", timeout=30000)
-        page.wait_for_timeout(3000)
+        # Vesteda is traag met networkidle, gebruik domcontentloaded en wacht extra
+        page.goto(url, wait_until="domcontentloaded", timeout=60000)
+        # Cookie consent
+        try:
+            page.click("button:has-text('Akkoord')", timeout=5000)
+            page.wait_for_timeout(1000)
+        except Exception:
+            pass
+        # Wacht tot de woninglinks zijn geladen (lazy loaded)
+        for _ in range(5):
+            try:
+                page.wait_for_selector('a[href*="huurwoningen-"]', timeout=8000)
+                break
+            except Exception:
+                # Scroll om lazy loading te triggeren
+                page.evaluate("window.scrollBy(0, 500)")
+                page.wait_for_timeout(1500)
+        page.wait_for_timeout(2000)
 
         items = page.evaluate("""
             const seen = new Set();
             const results = [];
-            document.querySelectorAll('a[href*="vesteda.com/nl/"]').forEach(a => {
-                if (seen.has(a.href) || a.href.includes('woning-zoeken')) return;
-                if (!a.href.includes('amersfoort') && !a.href.includes('huurwoning')) return;
+            document.querySelectorAll('a[href*="vesteda.com/nl/huurwoningen-"]').forEach(a => {
+                if (seen.has(a.href)) return;
                 seen.add(a.href);
-                const text = a.textContent.replace(/\\s+/g, ' ').trim();
-                const priceMatch = text.match(/(\\d[\\d.]+),-/);
-                const adresMatch = text.match(/^(?:Gereserveerd\\s+)?(.+?)\\s*EUR/i) || text.match(/^(?:Gereserveerd\\s+)?(.+?)\\s*per maand/i);
-                // Get first line as address
-                const lines = text.split(/EUR|per maand|Woonoppervlakte|Amersfoort/);
-                let adres = lines[0].replace('Gereserveerd', '').replace(/^\\s+|\\s+$/g, '');
+                // Vind de hele card door omhoog te lopen
+                let card = a;
+                for (let i = 0; i < 6; i++) {
+                    if (card.parentElement) card = card.parentElement;
+                    if (card.textContent && card.textContent.match(/per maand|EUR/i)) break;
+                }
+                const text = (card.textContent || '').replace(/\\s+/g, ' ').trim();
+                if (text.toLowerCase().includes('verhuurd') || text.toLowerCase().includes('gereserveerd')) return;
+                const priceMatch = text.match(/(\\d[\\d.]+),-/) || text.match(/EUR\\s*(\\d[\\d.]+)/i);
+                // Adres uit URL halen, bv 'huurwoningen-amersfoort/willem-iii/blekerssingel-47-amersfoort-3356'
+                const urlMatch = a.href.match(/huurwoningen-([a-z]+)\\/[^\\/]+\\/([^\\/]+?)-([a-z]+)-\\d+\\/?$/i);
+                let adres = '', stad = '';
+                if (urlMatch) {
+                    adres = urlMatch[2].replace(/-/g, ' ').replace(/\\b\\w/g, c => c.toUpperCase());
+                    stad = urlMatch[1].charAt(0).toUpperCase() + urlMatch[1].slice(1);
+                }
                 results.push({
                     adres: adres,
+                    stad: stad,
                     prijs: priceMatch ? priceMatch[1] + ',-' : '',
                     url: a.href
                 });
@@ -252,7 +278,7 @@ def scrape_vesteda(url=None):
             woningen.append({
                 "bron": "Vesteda",
                 "adres": item["adres"],
-                "stad": "Amersfoort",
+                "stad": item.get("stad") or "Amersfoort",
                 "prijs": item["prijs"],
                 "url": item["url"],
             })
@@ -741,8 +767,6 @@ def main():
         print(f"\n  [{naam}]")
         try:
             resultaten = scraper(url)
-            if not resultaten:
-                mislukte_scrapers.append((naam, "0 resultaten"))
             alle_woningen += resultaten
             print(f"  {len(resultaten)} woningen via {naam}.")
         except Exception as e:
