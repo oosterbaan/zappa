@@ -25,14 +25,27 @@ from playwright_stealth import Stealth
 from bs4 import BeautifulSoup
 
 # === CONFIGURATIE ===
+# Steden om te scrapen (URL-vriendelijke namen, lowercase)
+STEDEN = ["amersfoort", "leusden"]
+
+# URL-templates per site (gebruik {city} als placeholder)
+GOVAERT_URL = "https://govaert.nl/woning-huren/actueel-huuraanbod/?_plaatsen={city}"
+PARARIUS_URL = "https://www.pararius.nl/huurwoningen/{city}"
+DOMICA_URL = "https://www.domica.nl/woningaanbod?offer=rent&location={city_cap}"
+WONEN123_URL = "https://www.123wonen.nl/huurwoningen/in/{city}"
+INTERHOUSE_URL = "https://interhouse.nl/aanbod/?offer=huur&search_terms={city_cap}&search_type=city"
+NEDERWOON_URL = "https://nederwoon.nl/search?city={city_cap}"
+# Huurportaal werkt met group_ids per regio
+HUURPORTAAL_GROUP_IDS = {"amersfoort": "2600", "leusden": "2620"}
+HUURPORTAAL_URL = "https://huurwoningportaal.nl/huurwoningen?view=1&property_search%5Bgroup_ids%5D={gid}&property_search%5Bsort%5D=popularity"
+
+# Vesteda: 20km radius rond Amersfoort dekt ook Leusden, dus 1 call
 VESTEDA_URL = "https://www.vesteda.com/nl/woning-zoeken?placeType=1&sortType=1&radius=20&s=Amersfoort&sc=woning&latitude=52.156113&longitude=5.3878264&priceFrom=500&priceTo=9999"
-GOVAERT_URL = "https://govaert.nl/woning-huren/actueel-huuraanbod/?_plaatsen=amersfoort"
-PARARIUS_URL = "https://www.pararius.nl/huurwoningen/amersfoort"
-DOMICA_URL = "https://www.domica.nl/woningaanbod?offer=rent&location=Amersfoort"
-WONEN123_URL = "https://www.123wonen.nl/huurwoningen/in/amersfoort"
-INTERHOUSE_URL = "https://interhouse.nl/aanbod/?offer=huur&search_terms=Amersfoort&search_type=city"
-NEDERWOON_URL = "https://nederwoon.nl/search?city=Amersfoort"
-HUURPORTAAL_URL = "https://huurwoningportaal.nl/huurwoningen?view=1&property_search%5Bgroup_ids%5D=2600&property_search%5Bsort%5D=popularity"
+
+
+def url_voor(template, city):
+    """Vul stad in URL template."""
+    return template.format(city=city, city_cap=city.capitalize())
 
 # Telegram instellingen
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
@@ -194,7 +207,9 @@ def sla_bekende_woningen_op(woningen):
 # VESTEDA SCRAPER
 # =============================================================================
 
-def scrape_vesteda():
+def scrape_vesteda(url=None):
+    if url is None:
+        url = VESTEDA_URL
     """Scrape vesteda.com (geen login nodig, Playwright voor JS-rendering)."""
     woningen = []
 
@@ -206,7 +221,7 @@ def scrape_vesteda():
         )
         page = context.new_page()
         Stealth().apply_stealth_sync(page)
-        page.goto(VESTEDA_URL, wait_until="networkidle", timeout=30000)
+        page.goto(url, wait_until="networkidle", timeout=30000)
         page.wait_for_timeout(3000)
 
         items = page.evaluate("""
@@ -249,12 +264,12 @@ def scrape_vesteda():
 # GOVAERT SCRAPER
 # =============================================================================
 
-def scrape_govaert():
+def scrape_govaert(url):
     """Scrape Govaert makelaardij (geen login nodig)."""
     woningen = []
 
     try:
-        req = urllib.request.Request(GOVAERT_URL, headers={
+        req = urllib.request.Request(url, headers={
             "User-Agent": random_ua()
         })
         response = urllib.request.urlopen(req, timeout=15)
@@ -318,7 +333,7 @@ def scrape_govaert():
 # DOMICA SCRAPER
 # =============================================================================
 
-def scrape_domica():
+def scrape_domica(url):
     """Scrape Domica (Playwright nodig, dynamisch geladen)."""
     woningen = []
 
@@ -330,7 +345,7 @@ def scrape_domica():
         )
         page = context.new_page()
         Stealth().apply_stealth_sync(page)
-        page.goto(DOMICA_URL, wait_until="networkidle", timeout=30000)
+        page.goto(url, wait_until="networkidle", timeout=30000)
 
         try:
             page.wait_for_selector("a.eazlee_object", timeout=15000)
@@ -372,12 +387,12 @@ def scrape_domica():
 # 123WONEN SCRAPER
 # =============================================================================
 
-def scrape_123wonen():
+def scrape_123wonen(url):
     """Scrape 123Wonen (geen login of Playwright nodig)."""
     woningen = []
 
     try:
-        req = urllib.request.Request(WONEN123_URL, headers={
+        req = urllib.request.Request(url, headers={
             "User-Agent": random_ua()
         })
         response = urllib.request.urlopen(req, timeout=15)
@@ -437,7 +452,7 @@ def scrape_123wonen():
 # INTERHOUSE SCRAPER
 # =============================================================================
 
-def scrape_interhouse():
+def scrape_interhouse(url):
     """Scrape Interhouse (Playwright nodig, client-side rendered)."""
     woningen = []
 
@@ -449,7 +464,7 @@ def scrape_interhouse():
         )
         page = context.new_page()
         Stealth().apply_stealth_sync(page)
-        page.goto(INTERHOUSE_URL, wait_until="networkidle", timeout=30000)
+        page.goto(url, wait_until="networkidle", timeout=30000)
         page.wait_for_timeout(3000)
 
         items = page.evaluate("""
@@ -485,7 +500,7 @@ def scrape_interhouse():
 # NEDERWOON SCRAPER
 # =============================================================================
 
-def scrape_nederwoon():
+def scrape_nederwoon(url):
     """Scrape NederWoon (Playwright nodig, JS-rendered)."""
     woningen = []
 
@@ -497,7 +512,7 @@ def scrape_nederwoon():
         )
         page = context.new_page()
         Stealth().apply_stealth_sync(page)
-        page.goto(NEDERWOON_URL, wait_until="networkidle", timeout=30000)
+        page.goto(url, wait_until="networkidle", timeout=30000)
         page.wait_for_timeout(3000)
 
         items = page.evaluate("""
@@ -538,12 +553,12 @@ def scrape_nederwoon():
 # HUURWONINGPORTAAL SCRAPER
 # =============================================================================
 
-def scrape_huurportaal():
+def scrape_huurportaal(url):
     """Scrape Huurwoningportaal (geen login of Playwright nodig)."""
     woningen = []
 
     try:
-        req = urllib.request.Request(HUURPORTAAL_URL, headers={
+        req = urllib.request.Request(url, headers={
             "User-Agent": random_ua()
         })
         response = urllib.request.urlopen(req, timeout=15)
@@ -597,7 +612,7 @@ def scrape_huurportaal():
 # PARARIUS SCRAPER
 # =============================================================================
 
-def scrape_pararius():
+def scrape_pararius(url):
     """Scrape Pararius (Playwright nodig, blokkeert curl)."""
     woningen = []
 
@@ -609,7 +624,7 @@ def scrape_pararius():
         )
         page = context.new_page()
         Stealth().apply_stealth_sync(page)
-        page.goto(PARARIUS_URL, wait_until="networkidle", timeout=30000)
+        page.goto(url, wait_until="networkidle", timeout=30000)
 
         try:
             page.wait_for_selector(".search-list__item--listing", timeout=10000)
@@ -705,25 +720,28 @@ def main():
     alle_woningen = []
     mislukte_scrapers = []  # Voor crash-notifier
 
-    # Scrape alle bronnen in willekeurige volgorde (minder voorspelbaar)
-    scrapers = [
-        ("Vesteda", scrape_vesteda),
-        ("Govaert", scrape_govaert),
-        ("Pararius", scrape_pararius),
-        ("Domica", scrape_domica),
-        ("123Wonen", scrape_123wonen),
-        ("Interhouse", scrape_interhouse),
-        ("NederWoon", scrape_nederwoon),
-        ("Huurportaal", scrape_huurportaal),
-    ]
-    random.shuffle(scrapers)
+    # Bouw lijst van (naam, scraper-functie, url) per stad
+    # Vesteda: 1x (radius dekt beide steden)
+    scrape_jobs = [("Vesteda", scrape_vesteda, VESTEDA_URL)]
 
-    for naam, scraper in scrapers:
+    for stad in STEDEN:
+        scrape_jobs.append((f"Govaert {stad.capitalize()}", scrape_govaert, url_voor(GOVAERT_URL, stad)))
+        scrape_jobs.append((f"Pararius {stad.capitalize()}", scrape_pararius, url_voor(PARARIUS_URL, stad)))
+        scrape_jobs.append((f"Domica {stad.capitalize()}", scrape_domica, url_voor(DOMICA_URL, stad)))
+        scrape_jobs.append((f"123Wonen {stad.capitalize()}", scrape_123wonen, url_voor(WONEN123_URL, stad)))
+        scrape_jobs.append((f"Interhouse {stad.capitalize()}", scrape_interhouse, url_voor(INTERHOUSE_URL, stad)))
+        scrape_jobs.append((f"NederWoon {stad.capitalize()}", scrape_nederwoon, url_voor(NEDERWOON_URL, stad)))
+        gid = HUURPORTAAL_GROUP_IDS.get(stad)
+        if gid:
+            scrape_jobs.append((f"Huurportaal {stad.capitalize()}", scrape_huurportaal, HUURPORTAAL_URL.format(gid=gid)))
+
+    random.shuffle(scrape_jobs)
+
+    for naam, scraper, url in scrape_jobs:
         print(f"\n  [{naam}]")
         try:
-            resultaten = scraper()
+            resultaten = scraper(url)
             if not resultaten:
-                # Lege resultaten = waarschijnlijk site veranderd of geblokkeerd
                 mislukte_scrapers.append((naam, "0 resultaten"))
             alle_woningen += resultaten
             print(f"  {len(resultaten)} woningen via {naam}.")
@@ -875,11 +893,11 @@ def main():
     print(f"  {len(samengevoegd)} woningen onthouden (oud + huidig).")
 
     # Crash-notifier: stuur Telegram als de helft of meer scrapers faalt
-    if len(mislukte_scrapers) >= len(scrapers) // 2:
+    if len(mislukte_scrapers) >= len(scrape_jobs) // 2:
         details = "\n".join(f"- <b>{naam}</b>: {fout}" for naam, fout in mislukte_scrapers)
         stuur_telegram(
             f"⚠️ <b>Huurmonitor: scrapers falen!</b>\n\n"
-            f"{len(mislukte_scrapers)}/{len(scrapers)} scrapers faalden:\n{details}\n\n"
+            f"{len(mislukte_scrapers)}/{len(scrape_jobs)} scrapers faalden:\n{details}\n\n"
             f"Check de GitHub Actions logs."
         )
 
