@@ -55,6 +55,7 @@ BEKENDE_WONINGEN_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)),
 
 
 MIN_PRIJS = 1500
+VERGEET_NA_DAGEN = 14  # Woningen pas vergeten na zoveel dagen niet meer gezien
 
 
 def parse_prijs(prijs_str):
@@ -75,13 +76,21 @@ def parse_prijs(prijs_str):
 
 
 def normalize_adres(adres):
-    """Normaliseer adres voor vergelijking: lowercase, alleen letters+cijfers."""
+    """Normaliseer adres voor vergelijking: lowercase, alleen letters+cijfers,
+    woningtype-prefixen verwijderd."""
     if not adres:
         return ""
-    # Lowercase, strip whitespace
     a = adres.lower().strip()
-    # Verwijder Gereserveerd/Nieuw prefixen
-    a = re.sub(r"^(gereserveerd|nieuw|te huur|verhuurd)\s+", "", a)
+    # Verwijder status prefixen
+    a = re.sub(r"^(gereserveerd|nieuw|te huur|verhuurd|onder optie)\s+", "", a)
+    # Verwijder woningtype prefixen (Appartement, Woning, Studio, etc.)
+    a = re.sub(
+        r"^(appartement|woning|studio|huis|eengezinswoning|tussenwoning|"
+        r"hoekwoning|kamer|2-onder-1-kap|vrijstaand|maisonnette|penthouse|"
+        r"loft|bovenwoning|benedenwoning|herenhuis|villa)\s+",
+        "",
+        a,
+    )
     # Houd alleen letters, cijfers en spaties
     a = re.sub(r"[^a-z0-9\s]", " ", a)
     # Normaliseer whitespace
@@ -718,8 +727,33 @@ def main():
     else:
         print("  Geen nieuwe woningen.")
 
-    # Sla huidige stand op
-    sla_bekende_woningen_op(huidige_dict)
+    # Sla huidige stand op + behoud oude entries (max VERGEET_NA_DAGEN dagen)
+    nu_iso = datetime.now().isoformat()
+    cutoff_ts = (datetime.now().timestamp() - VERGEET_NA_DAGEN * 86400)
+    samengevoegd = {}
+
+    # Begin met oude entries die nog niet "verlopen" zijn
+    for old_key, val in bekende.items():
+        new_key = normalize_url(old_key) if old_key.startswith("http") else old_key
+        if isinstance(val, dict):
+            last_seen = val.get("last_seen")
+            try:
+                last_seen_ts = datetime.fromisoformat(last_seen).timestamp() if last_seen else cutoff_ts
+            except Exception:
+                last_seen_ts = cutoff_ts
+            if last_seen_ts >= cutoff_ts:
+                samengevoegd[new_key] = val
+        else:
+            samengevoegd[new_key] = {"last_seen": nu_iso}
+
+    # Voeg/overschrijf met huidige run
+    for key, w in huidige_dict.items():
+        w_met_ts = dict(w)
+        w_met_ts["last_seen"] = nu_iso
+        samengevoegd[key] = w_met_ts
+
+    sla_bekende_woningen_op(samengevoegd)
+    print(f"  {len(samengevoegd)} woningen onthouden (oud + huidig).")
 
     # Toon verdwenen woningen
     verdwenen = set(bekende.keys()) - set(huidige_dict.keys())
