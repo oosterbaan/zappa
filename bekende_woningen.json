@@ -1,4 +1,32 @@
 {
+  "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/lofoten-2520-10": {
+    "bron": "123Wonen",
+    "adres": "Lofoten Max",
+    "stad": "Amersfoort",
+    "prijs": "2.295,- p/mnd",
+    "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/lofoten-2520-10"
+  },
+  "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/baak+van+renesse-2518-10": {
+    "bron": "123Wonen",
+    "adres": "Baak van Renesse Max",
+    "stad": "Amersfoort",
+    "prijs": "2.950,- p/mnd",
+    "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/baak+van+renesse-2518-10"
+  },
+  "https://govaert.nl/woningen/oliesteeg-7-c-amersfoort-937085f04f9541f063420bbde4f37625cdb5a7": {
+    "bron": "Govaert",
+    "adres": "Oliesteeg 7",
+    "stad": "Amersfoort",
+    "prijs": "2.095 per maand",
+    "url": "https://govaert.nl/woningen/oliesteeg-7-c-amersfoort-937085f04f9541f063420bbde4f37625cdb5a7/"
+  },
+  "https://govaert.nl/woningen/meridiaan-106-amersfoort-93708519a0f28a067640f5bbcb880201e3a9ba": {
+    "bron": "Govaert",
+    "adres": "Meridiaan 106",
+    "stad": "Amersfoort",
+    "prijs": "1.895 per maand",
+    "url": "https://govaert.nl/woningen/meridiaan-106-amersfoort-93708519a0f28a067640f5bbcb880201e3a9ba/"
+  },
   "https://www.pararius.nl/appartement-te-huur/amersfoort/70e13348/piet-mondriaanlaan": {
     "bron": "Pararius",
     "adres": "Appartement Piet Mondriaanlaan",
@@ -75,6 +103,20 @@
     "stad": "3811 NA Amersfoort (Snouckaertlaan e.o.)",
     "prijs": "€ 1.500 per maand",
     "url": "https://www.pararius.nl/appartement-te-huur/amersfoort/6003b99c/utrechtseweg"
+  },
+  "https://www.domica.nl/woning/amersfoort-piet-mondriaanlaan-H106832254": {
+    "bron": "Domica",
+    "adres": "Piet Mondriaanlaan",
+    "stad": "3812GT Amersfoort",
+    "prijs": "€1.700 per maand",
+    "url": "https://www.domica.nl/woning/amersfoort-piet-mondriaanlaan-H106832254"
+  },
+  "https://www.domica.nl/woning/amersfoort-grote-haag-H106832250": {
+    "bron": "Domica",
+    "adres": "Grote Haag",
+    "stad": "3811HH Amersfoort",
+    "prijs": "€3.195 per maand",
+    "url": "https://www.domica.nl/woning/amersfoort-grote-haag-H106832250"
   },
   "https://huurwoningportaal.nl/huurwoning/2-kamer-appartement-in-amersfoort-a9c225": {
     "bron": "Huurportaal",
@@ -159,47 +201,5 @@
     "stad": "Amersfoort",
     "prijs": "",
     "url": "https://nederwoon.nl/huurwoning/amersfoort/38124/appartement-hogeweg"
-  },
-  "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/lofoten-2520-10": {
-    "bron": "123Wonen",
-    "adres": "Lofoten Max",
-    "stad": "Amersfoort",
-    "prijs": "2.295,- p/mnd",
-    "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/lofoten-2520-10"
-  },
-  "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/baak+van+renesse-2518-10": {
-    "bron": "123Wonen",
-    "adres": "Baak van Renesse Max",
-    "stad": "Amersfoort",
-    "prijs": "2.950,- p/mnd",
-    "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/baak+van+renesse-2518-10"
-  },
-  "https://govaert.nl/woningen/oliesteeg-7-c-amersfoort-937085f04f9541f063420bbde4f37625cdb5a7": {
-    "bron": "Govaert",
-    "adres": "Oliesteeg 7",
-    "stad": "Amersfoort",
-    "prijs": "2.095 per maand",
-    "url": "https://govaert.nl/woningen/oliesteeg-7-c-amersfoort-937085f04f9541f063420bbde4f37625cdb5a7/"
-  },
-  "https://govaert.nl/woningen/meridiaan-106-amersfoort-93708519a0f28a067640f5bbcb880201e3a9ba": {
-    "bron": "Govaert",
-    "adres": "Meridiaan 106",
-    "stad": "Amersfoort",
-    "prijs": "1.895 per maand",
-    "url": "https://govaert.nl/woningen/meridiaan-106-amersfoort-93708519a0f28a067640f5bbcb880201e3a9ba/"
-  },
-  "https://www.domica.nl/woning/amersfoort-piet-mondriaanlaan-H106832254": {
-    "bron": "Domica",
-    "adres": "Piet Mondriaanlaan",
-    "stad": "3812GT Amersfoort",
-    "prijs": "€1.700 per maand",
-    "url": "https://www.domica.nl/woning/amersfoort-piet-mondriaanlaan-H106832254"
-  },
-  "https://www.domica.nl/woning/amersfoort-grote-haag-H106832250": {
-    "bron": "Domica",
-    "adres": "Grote Haag",
-    "stad": "3811HH Amersfoort",
-    "prijs": "€3.195 per maand",
-    "url": "https://www.domica.nl/woning/amersfoort-grote-haag-H106832250"
   }
 }
