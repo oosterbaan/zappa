@@ -58,6 +58,7 @@ BEKENDE_WONINGEN_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)),
 MIN_PRIJS = 1500           # Minimaal in euro (None = geen minimum)
 MAX_PRIJS = 2500           # Maximaal in euro (None = geen maximum)
 MIN_OPPERVLAKTE = 60       # Minimaal m² (alleen filteren als oppervlakte bekend is)
+MIN_SLAAPKAMERS = 2        # Minimaal aantal slaapkamers (alleen filteren als bekend)
 VERGEET_NA_DAGEN = 180     # Woningen 6 maanden onthouden
 
 
@@ -101,6 +102,30 @@ def parse_oppervlakte(*texts):
         if m:
             try:
                 return int(m.group(1))
+            except ValueError:
+                pass
+    return None
+
+
+def parse_slaapkamers(*texts):
+    """Vind aantal slaapkamers. 'X slaapkamers' = X. 'X kamers' = X-1 (1 woonkamer).
+    Retourneert None als onbekend."""
+    for t in texts:
+        if not t:
+            continue
+        low = t.lower()
+        # Eerst expliciet 'slaapkamers' (zowel 'X slaapkamers' als 'slaapkamer(s) X')
+        m = re.search(r"(\d+)\s*slaapkamer", low) or re.search(r"slaapkamer[\(\)s]*\s*(\d+)", low)
+        if m:
+            try:
+                return int(m.group(1))
+            except ValueError:
+                pass
+        # Anders 'kamers' (totaal kamers, -1 voor woonkamer)
+        m = re.search(r"(\d+)\s*kamer", low)
+        if m:
+            try:
+                return max(0, int(m.group(1)) - 1)
             except ValueError:
                 pass
     return None
@@ -678,6 +703,7 @@ def main():
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Huurwoning monitor gestart...")
 
     alle_woningen = []
+    mislukte_scrapers = []  # Voor crash-notifier
 
     # Scrape alle bronnen in willekeurige volgorde (minder voorspelbaar)
     scrapers = [
@@ -696,10 +722,14 @@ def main():
         print(f"\n  [{naam}]")
         try:
             resultaten = scraper()
+            if not resultaten:
+                # Lege resultaten = waarschijnlijk site veranderd of geblokkeerd
+                mislukte_scrapers.append((naam, "0 resultaten"))
             alle_woningen += resultaten
             print(f"  {len(resultaten)} woningen via {naam}.")
         except Exception as e:
             print(f"  FOUT bij {naam}: {e}")
+            mislukte_scrapers.append((naam, str(e)[:100]))
         # Wacht 5-15 seconden tussen sites
         pauze = random.randint(5, 15)
         print(f"  (pauze {pauze}s)")
@@ -740,6 +770,7 @@ def main():
     gefilterd_te_duur = 0
     gefilterd_te_klein = 0
     gefilterd_verhuurd = 0
+    gefilterd_te_weinig_kamers = 0
     gefilterd_duplicaat_adres = 0
     gezien_adressen_deze_run = set()
 
@@ -767,6 +798,12 @@ def main():
         opp = parse_oppervlakte(prijs_str, adres, stad)
         if opp is not None and MIN_OPPERVLAKTE is not None and opp < MIN_OPPERVLAKTE:
             gefilterd_te_klein += 1
+            continue
+
+        # Slaapkamers-filter (alleen als bekend)
+        sk = parse_slaapkamers(prijs_str, adres, stad)
+        if sk is not None and MIN_SLAAPKAMERS is not None and sk < MIN_SLAAPKAMERS:
+            gefilterd_te_weinig_kamers += 1
             continue
 
         raw_key = w["url"] or adres
@@ -798,6 +835,8 @@ def main():
         print(f"  {gefilterd_te_klein} woning(en) gefilterd (oppervlakte < {MIN_OPPERVLAKTE} m²).")
     if gefilterd_verhuurd:
         print(f"  {gefilterd_verhuurd} woning(en) gefilterd (verhuurd/onder optie).")
+    if gefilterd_te_weinig_kamers:
+        print(f"  {gefilterd_te_weinig_kamers} woning(en) gefilterd (< {MIN_SLAAPKAMERS} slaapkamers).")
     if gefilterd_duplicaat_adres:
         print(f"  {gefilterd_duplicaat_adres} woning(en) gefilterd (duplicaat adres).")
 
@@ -835,14 +874,30 @@ def main():
     sla_bekende_woningen_op(samengevoegd)
     print(f"  {len(samengevoegd)} woningen onthouden (oud + huidig).")
 
-    # Toon verdwenen woningen
-    verdwenen = set(bekende.keys()) - set(huidige_dict.keys())
-    if verdwenen:
-        print(f"  {len(verdwenen)} woning(en) niet meer beschikbaar:")
-        for key in verdwenen:
-            info = bekende[key]
-            print(f"    - {info.get('adres', key)} ({info.get('bron', '?')})")
+    # Crash-notifier: stuur Telegram als de helft of meer scrapers faalt
+    if len(mislukte_scrapers) >= len(scrapers) // 2:
+        details = "\n".join(f"- <b>{naam}</b>: {fout}" for naam, fout in mislukte_scrapers)
+        stuur_telegram(
+            f"⚠️ <b>Huurmonitor: scrapers falen!</b>\n\n"
+            f"{len(mislukte_scrapers)}/{len(scrapers)} scrapers faalden:\n{details}\n\n"
+            f"Check de GitHub Actions logs."
+        )
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as exc:
+        import traceback
+        tb = traceback.format_exc()
+        print(tb)
+        try:
+            stuur_telegram(
+                f"❌ <b>Huurmonitor crashed!</b>\n\n"
+                f"<code>{str(exc)[:500]}</code>\n\n"
+                f"Check GitHub Actions logs voor details."
+            )
+        except Exception:
+            pass
+        # Niet falen voor de Action — anders krijg je weer foutmails
+        sys.exit(0)
