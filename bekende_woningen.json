@@ -1,17 +1,66 @@
 {
-  "https://govaert.nl/woningen/oliesteeg-7-c-amersfoort-937085f04f9541f063420bbde4f37625cdb5a7": {
-    "bron": "Govaert",
-    "adres": "Oliesteeg 7",
-    "stad": "Amersfoort",
-    "prijs": "2.095 per maand",
-    "url": "https://govaert.nl/woningen/oliesteeg-7-c-amersfoort-937085f04f9541f063420bbde4f37625cdb5a7/"
+  "https://www.domica.nl/woning/amersfoort-piet-mondriaanlaan-H106832254": {
+    "bron": "Domica",
+    "adres": "Piet Mondriaanlaan",
+    "stad": "3812GT Amersfoort",
+    "prijs": "€1.700 per maand",
+    "url": "https://www.domica.nl/woning/amersfoort-piet-mondriaanlaan-H106832254"
   },
-  "https://govaert.nl/woningen/meridiaan-106-amersfoort-93708519a0f28a067640f5bbcb880201e3a9ba": {
-    "bron": "Govaert",
-    "adres": "Meridiaan 106",
+  "https://www.domica.nl/woning/amersfoort-grote-haag-H106832250": {
+    "bron": "Domica",
+    "adres": "Grote Haag",
+    "stad": "3811HH Amersfoort",
+    "prijs": "€3.195 per maand",
+    "url": "https://www.domica.nl/woning/amersfoort-grote-haag-H106832250"
+  },
+  "https://huurwoningportaal.nl/huurwoning/2-kamer-appartement-in-amersfoort-a9c225": {
+    "bron": "Huurportaal",
+    "adres": "2 Kamer Appartement",
     "stad": "Amersfoort",
-    "prijs": "1.895 per maand",
-    "url": "https://govaert.nl/woningen/meridiaan-106-amersfoort-93708519a0f28a067640f5bbcb880201e3a9ba/"
+    "prijs": "1.670EUR",
+    "url": "https://huurwoningportaal.nl/huurwoning/2-kamer-appartement-in-amersfoort-a9c225"
+  },
+  "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-db24d7": {
+    "bron": "Huurportaal",
+    "adres": "4 Kamer Appartement",
+    "stad": "Amersfoort",
+    "prijs": "1.500EUR",
+    "url": "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-db24d7"
+  },
+  "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-d7e8b9": {
+    "bron": "Huurportaal",
+    "adres": "4 Kamer Appartement",
+    "stad": "Amersfoort",
+    "prijs": "1.895EUR",
+    "url": "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-d7e8b9"
+  },
+  "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-cd8d7c": {
+    "bron": "Huurportaal",
+    "adres": "3 Kamer Appartement",
+    "stad": "Amersfoort",
+    "prijs": "1.550EUR",
+    "url": "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-cd8d7c"
+  },
+  "https://huurwoningportaal.nl/huurwoning/4-kamer-huis-rijtjeshuis-in-amersfoort-a0468c": {
+    "bron": "Huurportaal",
+    "adres": "4 Kamer Huis Rijtjeshuis",
+    "stad": "Amersfoort",
+    "prijs": "1.585EUR",
+    "url": "https://huurwoningportaal.nl/huurwoning/4-kamer-huis-rijtjeshuis-in-amersfoort-a0468c"
+  },
+  "https://huurwoningportaal.nl/huurwoning/4-kamer-huis-rijtjeshuis-in-amersfoort-cd864c": {
+    "bron": "Huurportaal",
+    "adres": "4 Kamer Huis Rijtjeshuis",
+    "stad": "Amersfoort",
+    "prijs": "1.945EUR",
+    "url": "https://huurwoningportaal.nl/huurwoning/4-kamer-huis-rijtjeshuis-in-amersfoort-cd864c"
+  },
+  "https://huurwoningportaal.nl/huurwoning/5-kamer-huis-rijtjeshuis-in-amersfoort-032ded": {
+    "bron": "Huurportaal",
+    "adres": "5 Kamer Huis Rijtjeshuis",
+    "stad": "Amersfoort",
+    "prijs": "1.770EUR",
+    "url": "https://huurwoningportaal.nl/huurwoning/5-kamer-huis-rijtjeshuis-in-amersfoort-032ded"
   },
   "https://www.pararius.nl/appartement-te-huur/amersfoort/70e13348/piet-mondriaanlaan": {
     "bron": "Pararius",
@@ -104,55 +153,6 @@
     "prijs": "2.950,- p/mnd",
     "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/baak+van+renesse-2518-10"
   },
-  "https://huurwoningportaal.nl/huurwoning/2-kamer-appartement-in-amersfoort-a9c225": {
-    "bron": "Huurportaal",
-    "adres": "2 Kamer Appartement",
-    "stad": "Amersfoort",
-    "prijs": "1.670EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/2-kamer-appartement-in-amersfoort-a9c225"
-  },
-  "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-db24d7": {
-    "bron": "Huurportaal",
-    "adres": "4 Kamer Appartement",
-    "stad": "Amersfoort",
-    "prijs": "1.500EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-db24d7"
-  },
-  "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-d7e8b9": {
-    "bron": "Huurportaal",
-    "adres": "4 Kamer Appartement",
-    "stad": "Amersfoort",
-    "prijs": "1.895EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/4-kamer-appartement-in-amersfoort-d7e8b9"
-  },
-  "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-cd8d7c": {
-    "bron": "Huurportaal",
-    "adres": "3 Kamer Appartement",
-    "stad": "Amersfoort",
-    "prijs": "1.550EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-cd8d7c"
-  },
-  "https://huurwoningportaal.nl/huurwoning/4-kamer-huis-rijtjeshuis-in-amersfoort-a0468c": {
-    "bron": "Huurportaal",
-    "adres": "4 Kamer Huis Rijtjeshuis",
-    "stad": "Amersfoort",
-    "prijs": "1.585EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/4-kamer-huis-rijtjeshuis-in-amersfoort-a0468c"
-  },
-  "https://huurwoningportaal.nl/huurwoning/4-kamer-huis-rijtjeshuis-in-amersfoort-cd864c": {
-    "bron": "Huurportaal",
-    "adres": "4 Kamer Huis Rijtjeshuis",
-    "stad": "Amersfoort",
-    "prijs": "1.945EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/4-kamer-huis-rijtjeshuis-in-amersfoort-cd864c"
-  },
-  "https://huurwoningportaal.nl/huurwoning/5-kamer-huis-rijtjeshuis-in-amersfoort-032ded": {
-    "bron": "Huurportaal",
-    "adres": "5 Kamer Huis Rijtjeshuis",
-    "stad": "Amersfoort",
-    "prijs": "1.770EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/5-kamer-huis-rijtjeshuis-in-amersfoort-032ded"
-  },
   "https://nederwoon.nl/huurwoning/amersfoort/38041/appartement-groningerstraat": {
     "bron": "NederWoon",
     "adres": "Groningerstraat",
@@ -188,18 +188,18 @@
     "prijs": "",
     "url": "https://nederwoon.nl/huurwoning/amersfoort/38124/appartement-hogeweg"
   },
-  "https://www.domica.nl/woning/amersfoort-piet-mondriaanlaan-H106832254": {
-    "bron": "Domica",
-    "adres": "Piet Mondriaanlaan",
-    "stad": "3812GT Amersfoort",
-    "prijs": "€1.700 per maand",
-    "url": "https://www.domica.nl/woning/amersfoort-piet-mondriaanlaan-H106832254"
+  "https://govaert.nl/woningen/oliesteeg-7-c-amersfoort-937085f04f9541f063420bbde4f37625cdb5a7": {
+    "bron": "Govaert",
+    "adres": "Oliesteeg 7",
+    "stad": "Amersfoort",
+    "prijs": "2.095 per maand",
+    "url": "https://govaert.nl/woningen/oliesteeg-7-c-amersfoort-937085f04f9541f063420bbde4f37625cdb5a7/"
   },
-  "https://www.domica.nl/woning/amersfoort-grote-haag-H106832250": {
-    "bron": "Domica",
-    "adres": "Grote Haag",
-    "stad": "3811HH Amersfoort",
-    "prijs": "€3.195 per maand",
-    "url": "https://www.domica.nl/woning/amersfoort-grote-haag-H106832250"
+  "https://govaert.nl/woningen/meridiaan-106-amersfoort-93708519a0f28a067640f5bbcb880201e3a9ba": {
+    "bron": "Govaert",
+    "adres": "Meridiaan 106",
+    "stad": "Amersfoort",
+    "prijs": "1.895 per maand",
+    "url": "https://govaert.nl/woningen/meridiaan-106-amersfoort-93708519a0f28a067640f5bbcb880201e3a9ba/"
   }
 }
