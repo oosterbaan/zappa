@@ -1,4 +1,4 @@
-name: Huurwoning Monitor
+name: scheduled-task
 
 on:
   schedule:
@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
     inputs:
       seed:
-        description: 'Alleen bekende_woningen.json bijwerken, geen Telegram'
+        description: 'Dry-run (alleen state bijwerken)'
         type: boolean
         default: false
 
@@ -41,13 +41,12 @@ jobs:
       - name: Random delay
         run: sleep $((RANDOM % 120 + 30))
 
-      - name: Run monitor
+      - name: Run task
         env:
-          VESTEDA_EMAIL: ${{ secrets.VESTEDA_EMAIL }}
-          VESTEDA_WACHTWOORD: ${{ secrets.VESTEDA_WACHTWOORD }}
+          SITES_JSON: ${{ secrets.SITES_JSON }}
           TELEGRAM_BOT_TOKEN: ${{ inputs.seed && '' || secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ inputs.seed && '' || secrets.TELEGRAM_CHAT_ID }}
-        run: python vesteda_monitor.py || true
+        run: python runner.py || true
 
       - name: Save known properties
         if: always()
