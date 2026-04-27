@@ -2,11 +2,12 @@ name: Huurwoning Monitor
 
 on:
   schedule:
-    # ~Elke 30 min maar op onregelmatige tijden
-    - cron: '3,38 0,4,8,12,16,20 * * *'
-    - cron: '11,47 1,5,9,13,17,21 * * *'
-    - cron: '22,53 2,6,10,14,18,22 * * *'
-    - cron: '17,44 3,7,11,15,19,23 * * *'
+    # 16 runs/dag (~1440 min/maand, binnen GitHub Actions gratis 2000 min)
+    # Vooral overdag wanneer woningen online komen, op onregelmatige tijden
+    - cron: '17 6,10,14,18,22 * * *'      # 5 keer
+    - cron: '53 7,11,15,19 * * *'          # 4 keer
+    - cron: '34 8,12,16,20 * * *'          # 4 keer
+    - cron: '41 9,13,17,21 * * *'          # 4 keer (overlap voorkomen)
   workflow_dispatch:
     inputs:
       seed:
