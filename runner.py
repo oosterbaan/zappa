@@ -823,6 +823,7 @@ def main():
     gefilterd_te_klein = 0
     gefilterd_verhuurd = 0
     gefilterd_te_weinig_kamers = 0
+    gefilterd_buiten_target = 0
     gefilterd_duplicaat_adres = 0
     gezien_adressen_deze_run = set()
 
@@ -830,6 +831,12 @@ def main():
         prijs_str = w.get("prijs", "")
         adres = w.get("adres", "")
         stad = w.get("stad", "")
+
+        # City-filter: alleen TARGETS toelaten
+        combined = (stad + " " + adres).lower()
+        if not any(target in combined for target in TARGETS):
+            gefilterd_buiten_target += 1
+            continue
 
         # Filter verhuurd op alle sites (extra check)
         if is_verhuurd(prijs_str, adres, stad):
@@ -885,6 +892,8 @@ def main():
         print(f"  {gefilterd_te_duur} woning(en) gefilterd (prijs > EUR {MAX_PRIJS}).")
     if gefilterd_te_klein:
         print(f"  {gefilterd_te_klein} woning(en) gefilterd (oppervlakte < {MIN_OPPERVLAKTE} m²).")
+    if gefilterd_buiten_target:
+        print(f"  {gefilterd_buiten_target} woning(en) gefilterd (buiten {TARGETS}).")
     if gefilterd_verhuurd:
         print(f"  {gefilterd_verhuurd} woning(en) gefilterd (verhuurd/onder optie).")
     if gefilterd_te_weinig_kamers:
