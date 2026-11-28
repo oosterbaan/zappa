@@ -143,14 +143,6 @@
     "url": "https://govaert.nl/woningen/sara-burgerhartsingel-349-amersfoort-9370851878fd8e49b34bbb87d8cceba4ee6c84/",
     "last_seen": "2026-07-01T17:38:12.993792"
   },
-  "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-a7a717": {
-    "bron": "h",
-    "adres": "3 Kamer Appartement",
-    "stad": "Amersfoort",
-    "prijs": "1.500EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-a7a717",
-    "last_seen": "2026-06-01T15:48:11.206906"
-  },
   "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-310b65": {
     "bron": "h",
     "adres": "3 Kamer Appartement",
@@ -190,22 +182,6 @@
     "prijs": "1.550EUR",
     "url": "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-a7320c",
     "last_seen": "2026-06-01T23:50:55.619986"
-  },
-  "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-39c82a": {
-    "bron": "h",
-    "adres": "3 Kamer Appartement",
-    "stad": "Amersfoort",
-    "prijs": "1.500EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-39c82a",
-    "last_seen": "2026-06-01T15:48:11.206906"
-  },
-  "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-7edfa5": {
-    "bron": "h",
-    "adres": "3 Kamer Appartement",
-    "stad": "Amersfoort",
-    "prijs": "2.000EUR",
-    "url": "https://huurwoningportaal.nl/huurwoning/3-kamer-appartement-in-amersfoort-7edfa5",
-    "last_seen": "2026-06-01T15:48:11.206906"
   },
   "https://huurwoningportaal.nl/huurwoning/3-kamer-huis-rijtjeshuis-in-amersfoort-326c91": {
     "bron": "h",
@@ -1533,7 +1509,7 @@
     "stad": "3812GZ Amersfoort",
     "prijs": "€1.950 per maand",
     "url": "https://www.domica.nl/woning/amersfoort-piet-mondriaanplein-H106832281",
-    "last_seen": "2026-11-28T15:36:24.357716"
+    "last_seen": "2026-11-28T16:32:44.014262"
   },
   "https://www.pararius.nl/appartement-te-huur/amersfoort/c1ee8e35/piet-mondriaanplein": {
     "bron": "c",
@@ -1613,7 +1589,7 @@
     "stad": "3811DK Amersfoort",
     "prijs": "€1.950 per maand",
     "url": "https://www.domica.nl/woning/amersfoort-achter-de-arnhemse-poortwal-H106830106",
-    "last_seen": "2026-11-28T15:36:24.357716"
+    "last_seen": "2026-11-28T16:32:44.014262"
   },
   "https://www.pararius.nl/appartement-te-huur/amersfoort/a6abb46f/friesestraat": {
     "bron": "c",
@@ -1861,7 +1837,7 @@
     "stad": "3818TK Amersfoort",
     "prijs": "€2.395 per maand",
     "url": "https://www.domica.nl/woning/amersfoort-surinamelaan-H106832287",
-    "last_seen": "2026-11-28T15:36:24.357716"
+    "last_seen": "2026-11-28T16:32:44.014262"
   },
   "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/triangelstraat-2543-10": {
     "bron": "e",
@@ -1869,7 +1845,7 @@
     "stad": "Amersfoort",
     "prijs": "1.950,- p/mnd",
     "url": "https://www.123wonen.nl/huur/amersfoort/eengezinswoning/triangelstraat-2543-10",
-    "last_seen": "2026-11-28T15:36:24.357716"
+    "last_seen": "2026-11-28T16:32:44.014262"
   },
   "https://www.pararius.nl/appartement-te-huur/amersfoort/3d48b815/surinamelaan": {
     "bron": "c",
@@ -1917,7 +1893,7 @@
     "stad": "3811DK Amersfoort",
     "prijs": "€1.750 per maand",
     "url": "https://www.domica.nl/woning/amersfoort-achter-de-arnhemse-poortwal-H106830253",
-    "last_seen": "2026-11-28T15:36:24.357716"
+    "last_seen": "2026-11-28T16:32:44.014262"
   },
   "https://govaert.nl/woningen/stationsstraat-24-c-amersfoort-9370853c1dec0e7b284a3d80f8bd0bc7228d9a": {
     "bron": "b",
@@ -1933,7 +1909,7 @@
     "stad": "Amersfoort",
     "prijs": "1785,-",
     "url": "https://www.vesteda.com/nl/huurwoningen-amersfoort/schuilenburg/carmenstraat-7-amersfoort-8394",
-    "last_seen": "2026-11-28T15:36:24.357716"
+    "last_seen": "2026-11-28T16:32:44.014262"
   },
   "https://govaert.nl/woningen/muurhuizen-159-amersfoort-9370857676c62885ad479389c02395094ed9ef": {
     "bron": "b",
@@ -1989,7 +1965,7 @@
     "stad": "3812SP Amersfoort",
     "prijs": "Huurprijs op aanvraag",
     "url": "https://www.domica.nl/woning/amersfoort-matthias-withoosstraat-H106830237",
-    "last_seen": "2026-11-28T15:36:24.357716"
+    "last_seen": "2026-11-28T16:32:44.014262"
   },
   "https://www.pararius.nl/appartement-te-huur/amersfoort/5fe4ac65/de-schutspatroon": {
     "bron": "c",
@@ -2005,7 +1981,7 @@
     "stad": "Amersfoort",
     "prijs": "1675,-",
     "url": "https://www.vesteda.com/nl/huurwoningen-amersfoort/zicht-op-amersfoort-laagbouw/zeeuwsestraat-85-amersfoort-20036",
-    "last_seen": "2026-11-28T15:36:24.357716"
+    "last_seen": "2026-11-28T16:32:44.014262"
   },
   "https://www.vesteda.com/nl/huurwoningen-leusden/nieuw-princenhof/madelagehof-14-leusden-8112": {
     "bron": "a",
@@ -2013,7 +1989,7 @@
     "stad": "Leusden",
     "prijs": "1925,-",
     "url": "https://www.vesteda.com/nl/huurwoningen-leusden/nieuw-princenhof/madelagehof-14-leusden-8112",
-    "last_seen": "2026-11-28T15:36:24.357716"
+    "last_seen": "2026-11-28T16:32:44.014262"
   },
   "https://govaert.nl/woningen/schorrekruid-14-amersfoort-9370853c49800ad32442b89534c63ba61918ab": {
     "bron": "b",
